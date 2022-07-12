@@ -111,6 +111,29 @@ header .logo{
     font-size: 58px;
     color: rgb(9, 9, 9);
     filter: drop-shadow(4px 2px 4px rgb(255, 255, 255));
+    animation-name: space;
+    transition: 1s;
+}
+@keyframes space{
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 1;
+        scale: 0.5;
+    }
+    40%{
+        scale: 0.8;
+    }
+    60%{
+        scale: 1;
+    }
+    80%{
+        scale: 1.2;
+    }
+    100%{
+        scale: 1;
+    }
 }
 
 .cutPage1{   
@@ -125,7 +148,7 @@ header .logo{
     height: min-content;
     padding-bottom: 60px;
     width: 100%;
-    background-image: linear-gradient(to bottom, rgba(12, 0, 82, 0.932) 75%, rgba(0, 0, 0, 0.904));
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.945), rgba(22, 0, 22, 0.904), rgba(0, 0, 0, 0.911));
 }
 
 /* Titulo de secciones */
@@ -371,7 +394,7 @@ header .logo{
 .containerConcept{
     height: auto;
     width: 100%;
-    background-color: rgba(11, 0, 70, 0.929);
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(88, 0, 88, 0.904), rgb(0, 0, 0));
     color: rgb(222, 222, 222);
     display: flex;
     justify-content: space-around;
@@ -455,7 +478,7 @@ footer{
 
 /* page 2 "Seccion 1" */
 .pg2{
-    background-color: rgba(21, 1, 40, 0.88);
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(1, 38, 63, 0.904), rgb(0, 0, 0));
     width: 100%;
     height: min-content;
     margin: -95px 0px 0px 0px;
@@ -522,7 +545,7 @@ footer{
 
 
 .pg3{
-    background-image: url(./media/fondoSeccion2.jpg);
+    background-image: linear-gradient(to bottom, rgba(8, 8, 8, 0.966), rgba(0, 4, 255, 0.801),  rgba(8, 8, 8, 0.966));
     width: 100%;
     height: min-content;
     margin: -95px 0px 0px 0px;
@@ -700,7 +723,7 @@ footer{
 
 /* Page 4 "Apollo Program" */
 .pg4{
-    background-image: url(./media/bgApolloProgram.jpg);
+    background-image: linear-gradient(to bottom, rgba(8, 8, 8, 0.966), rgb(70, 39, 0),  rgba(8, 8, 8, 0.966));
     margin-top: -95px;
     padding-top: 105px;
     height: min-content;
@@ -802,7 +825,7 @@ footer{
 
 /* page 5 "Astronauts*/
 .pg5{
-    background-image: url(./media/bgAboutUs.jpg);
+    background-image: linear-gradient(to bottom, rgba(35, 0, 58, 0.966), rgb(7, 7, 7), rgb(5, 5, 5));
     margin-top: -95px;
     color: rgb(222, 222, 222);
     padding-top: 80px;
