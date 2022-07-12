@@ -1,0 +1,1244 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: typori;
+    scroll-behavior: smooth;
+}
+@font-face {
+    font-family: azonix;
+    src: url(./tipografia/Azonix.otf);
+}
+@font-face {
+    font-family: plateia;
+    src: url(./tipografia/Plateia\ Bold.ttf);
+}
+@font-face {
+    font-family: typori;
+    src: url(./tipografia/Typori-Regular.ttf);
+}
+
+h1{
+    font-family: azonix;
+    font-size: 64px;
+    line-height: 76.8px;
+}   
+
+h2{
+    font-family: azonix;
+    font-size: 54px;
+    line-height: 64.8px;
+}
+
+h3{
+    font-family: plateia;
+    font-size: 44px;
+    line-height: 52.8px;
+}
+
+h4{
+    font-family: plateia;
+    font-size: 34px;
+    line-height: 40.8px;
+}
+
+p{
+    font-family: typori;
+    font-size: 24px;
+    line-height: 28.8px;
+}
+
+/* header */
+.header{
+    z-index: 1;
+    position: fixed;
+    width: 80%;
+    top: 0px;
+    right: 10%;
+    left: 10%;
+    background-color: rgba(0, 0, 0, 0.782);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 25px 5px 25px;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.823);
+}
+
+header .logo{
+    color: rgb(222, 222, 222);
+    font-family: azonix;
+    font-size: 42px;
+}
+
+.luna{
+    height: 65px;
+    width: 65px;
+    filter: drop-shadow(6px 6px 10px black);
+}
+
+.luna:hover{
+    filter:brightness(1.1)
+}
+
+.background1{
+    z-index: 2;
+    background-image:url(./media/galaxy2.jpg);
+    height: 984px;
+    width: 100%;
+    margin: -95px 0px 0px 0px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* parte 1 */
+.presentacion{
+    color: rgb(222, 222, 222);
+    padding-left: 10px;
+    padding-right: 10px;
+    filter: drop-shadow(4px 2px 8px rgb(5, 5, 5));
+}
+.presentacion span{
+    font-family: azonix;
+    font-size: 58px;
+    color: rgb(9, 9, 9);
+    filter: drop-shadow(4px 2px 4px rgb(255, 255, 255));
+}
+
+.cutPage1{   
+    height: 120px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.956);
+    box-shadow: 2px 2px 4px rgb(5, 5, 5);
+}
+
+/* Parte 2 */
+.parte2{
+    height: min-content;
+    padding-bottom: 60px;
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(12, 0, 82, 0.932) 75%, rgba(0, 0, 0, 0.904));
+}
+
+/* Titulo de secciones */
+
+.bgTituloSecciones{
+    display: flex;
+    justify-content: center;
+}
+
+.tituloSecciones{
+    color: rgb(222, 222, 222);
+    background-color: rgba(255, 255, 255, 0.128);
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 10px 20px 20px 20px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 4px;
+    box-shadow: 6px 4px 10px black;
+}
+
+.ContainerCarta{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: auto;
+    margin-bottom: 100px;
+}
+
+/* Seccion 1 */
+
+.bgSeccion1{
+    height: 500px;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.303);
+    border: 1px solid rgba(0, 0, 0, 0.798);
+    border-radius: 20px;
+    padding: 20px 20px 20px 20px;
+    margin: 20px 20px 20px 20px;
+    box-shadow: 15px 15px 20px black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    filter: brightness(0.9);
+}
+.bgSeccion1:hover{
+    filter: brightness(1);
+}
+
+.tituloSeccion1{
+    color: rgb(222, 222, 222);
+}
+
+.cuerpoSeccion1{
+    font-size: 20px;
+    color: rgb(222, 222, 222);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#seccion1{
+    color: rgb(222, 222, 222);
+    background-color: rgba(21, 1, 40, 0.88);
+    border: 2px solid black;
+    text-align: center;
+    padding: 4px 4px 4px 4px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 2px;
+    text-decoration: none;
+    box-shadow: 2px 2px 6px black;
+
+}
+#seccion1:hover{
+    filter: brightness(1.4);
+}
+
+/* Seccion 2 */
+
+.bgSeccion2{
+    height: 500px;
+    width: 400px;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.798);
+    background-color: rgba(255, 255, 255, 0.303);
+    padding: 20px 20px 20px 20px;
+    margin: 20px 20px 20px 20px;
+    box-shadow: 15px 15px 20px black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column ;
+    filter: brightness(0.9);
+}
+.bgSeccion2:hover{
+    filter: brightness(1);
+}
+
+.tituloSeccion2{
+    color: rgb(222, 222, 222);
+}
+
+.cuerpoSeccion2{
+    font-size: 20px;
+    color: rgb(222, 222, 222);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#seccion2{
+    color: rgb(222, 222, 222);
+    background-color: rgba(21, 1, 40, 0.88);
+    border: 2px solid black;
+    text-align: center;
+    padding: 4px 4px 4px 4px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 2px;
+    text-decoration: none;
+    box-shadow: 2px 2px 6px black;
+}
+#seccion2:hover{
+    filter: brightness(1.4);
+}
+
+/* Apollo Program */
+
+.bgApollo{
+    height: 500px;
+    width: 400px;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.798);
+    background-color: rgba(255, 255, 255, 0.303);
+    padding: 20px 20px 20px 20px;
+    margin: 20px 20px 20px 20px;
+    box-shadow: 15px 15px 20px black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    filter: brightness(0.9);
+}
+.bgApollo:hover{
+    filter: brightness(1);
+}
+
+.tituloApollo{
+    color: rgb(222, 222, 222);
+}
+
+.cuerpoApollo{
+    font-size: 20px;
+    color: rgb(222, 222, 222);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#apollo{
+    color: rgb(222, 222, 222);
+    background-color: rgba(21, 1, 40, 0.88);
+    border: 2px solid black;
+    text-align: center;
+    padding: 4px 4px 4px 4px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 2px;
+    text-decoration: none;
+    box-shadow: 2px 2px 6px black;
+}
+#apollo:hover{
+    filter: brightness(1.4);
+}
+
+
+/* Astronauts */
+
+.bgAstronauts{
+    height: 500px;
+    width: 400px;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.798);
+    background-color: rgba(255, 255, 255, 0.303);
+    padding: 20px 20px 20px 20px;
+    margin: 20px 20px 20px 20px;
+    box-shadow: 15px 15px 20px black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    filter: brightness(0.9);
+}
+.bgAstronauts:hover{
+    filter: brightness(1);
+}
+
+.tituloAstronauts{
+    color: rgb(222, 222, 222);
+}
+
+.cuerpoaAstronauts{
+    font-size: 20px;
+    color: rgb(222, 222, 222);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#astronauts{
+    color: rgb(222, 222, 222);
+    background-color: rgba(21, 1, 40, 0.88);
+    border: 2px solid black;
+    text-align: center;
+    padding: 4px 4px 4px 4px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 2px;
+    text-decoration: none;
+    box-shadow: 2px 2px 6px black;
+}
+#astronauts:hover{
+    filter: brightness(1.4);
+}
+
+.cutPage2{   
+    height: 120px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.956);
+    box-shadow: 2px 2px 4px rgb(5, 5, 5);
+}
+
+
+/* Parte 3 */
+.containerConcept{
+    height: auto;
+    width: 100%;
+    background-color: rgba(11, 0, 70, 0.929);
+    color: rgb(222, 222, 222);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.tituloConcept{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 20px;
+}
+
+.cuerpoConcept{
+    height: min-content;
+    text-align: left;
+    width: 85%;
+    padding: 0px 20px 100px 20px;
+}
+
+/* footer */
+footer{
+    color: rgb(222, 222, 222);
+    background-color:rgba(0, 0, 0, 0.956);
+    height: min-content;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright{
+    font-family: azonix;
+    font-size: 34px;
+}
+
+.redes{
+    font-size: 32px;
+    letter-spacing: 10px;
+    padding-bottom: 10px;
+}
+.redes i:hover{
+    color: rgba(80, 0, 230, 0.929);
+}
+
+#twitter{
+    text-decoration: none;
+    color: rgb(235, 235, 235);
+}
+
+#instagram{
+    text-decoration: none;
+    color: rgb(235, 235, 235);
+}
+
+#linkedin{
+    text-decoration: none;
+    color: rgb(235, 235, 235);
+}
+
+/* elemento para subir/ir a inicio */
+.up{
+    position: fixed;
+    right: 10px;
+    bottom: 110px;
+    transition: all 0.3s;
+    filter: drop-shadow(4px 2px 4px rgba(229, 229, 229, 0.734));
+}
+
+.up:hover{
+    filter: drop-shadow(4px 2px 4px rgb(229, 229, 229));
+    transform: scale(1.10);
+}
+
+.proximamente{
+    display: flex;
+    justify-content: center;
+}
+
+/* page 2 "Seccion 1" */
+.pg2{
+    background-color: rgba(21, 1, 40, 0.88);
+    width: 100%;
+    height: min-content;
+    margin: -95px 0px 0px 0px;
+}
+
+.containerTituloP2{
+    padding: 195px 10px 0px 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.tituloP2{
+    color: rgb(222, 222, 222);
+    background-color: rgba(255, 255, 255, 0.128);
+    text-align: center;
+    padding: 10px 20px 20px 20px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 4px;
+    box-shadow: 6px 4px 10px black;
+}
+
+.containerSeccion1P2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    padding: 100px 20px 100px 20px;
+}
+
+.imgSeccion1P2{
+    height: 317px;
+    width: 600px;
+    border: 3px solid black;
+    border-radius: 4px;
+    box-shadow: 6px 4px 10px black;
+    filter: brightness(1.3);
+    margin-bottom: 20px;    
+}
+.cuerpoP2{
+    color: rgb(222, 222, 222);
+    background-color: rgba(255, 255, 255, 0.128);
+    height: 600px;
+    width: 600px;
+    padding: 5px 5px 5px 5px;
+    overflow: auto;
+    text-align: justify;
+    border: 3px solid black;
+    border-radius: 4px;
+    box-shadow: 6px 4px 10px black;
+}
+.cuerpoP2::-webkit-scrollbar{
+    width: 8px;
+}
+
+.cuerpoP2::-webkit-scrollbar-thumb{
+    background-color: rgba(95, 95, 95, 0.84);
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.568)
+}
+
+/* page 3 "seccion 2" */
+
+
+
+.pg3{
+    background-image: url(./media/fondoSeccion2.jpg);
+    width: 100%;
+    height: min-content;
+    margin: -95px 0px 0px 0px;
+}
+
+.containerCutPage1P3{
+    padding: 195px 0px 0px 0px;
+}
+
+.cutPage1P3{
+    height: 50px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.956);
+    box-shadow: 2px 2px 4px rgba(243, 243, 243, 0.34);
+}
+
+.containerTituloP3{
+    padding: 100px 10px 100px 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.tituloP3{
+    color: rgb(222, 222, 222);
+    background-color: rgba(255, 255, 255, 0.335);
+    text-align: center;
+    padding: 10px 20px 20px 20px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 4px;
+    box-shadow: 6px 4px 10px rgba(243, 243, 243, 0.514);
+}
+
+.containerMargaretP3{
+    width: 100%;
+    height: min-content;
+    padding-bottom: 100px;
+}
+
+#containerMargaret{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+#Margaret{
+    width: 300px;
+    height: auto;
+    border: 1px solid rgba(222, 222, 222, 0.808);
+    box-shadow: 2px 2px 4px rgba(222, 222, 222, 0.692);
+}
+
+.containerCuerpoMargaret{
+    display: flex;
+    justify-content: center;
+}
+
+.containerCuerpoMargaret p{
+    color: rgb(222, 222, 222);
+    height: min-content;
+    width: 100%;
+    margin: 0px 40px 0px 40px;
+}
+
+.containerIframeMargaret{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: min-content;
+    height: min-content;
+    margin: 100px 20px 50px 20px;
+    box-shadow: 4px -4px 20px rgba(19, 19, 19, 0.89);
+    filter: brightness(0.8);
+}
+.containerIframeMargaret:hover{
+    filter: brightness(1.0);
+}
+
+.containerSubTituloMargaret{
+    color: rgb(222, 222, 222);
+    margin: 80px 0px 100px 20px;
+}
+
+.containerCuerpoMargaret2{
+    display: flex;
+    justify-content: center;
+}
+
+.containerCuerpoMargaret2 p{
+    color: rgb(222, 222, 222);
+    height: min-content;
+    width: 100%;
+    margin: 0px 40px 100px 40px;
+}
+
+.gridContainerMargaret{
+    width: 100%;
+    height: auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: 300px 300px;
+    padding-bottom: 100px;
+    grid-gap: 25px
+}
+
+.gridM{
+    border: 1px solid rgb(222, 222, 222);
+    box-shadow: 2px -2px 8px rgba(255, 255, 255, 0.363);
+}
+
+
+.gridMargaret1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-image: url(./media/item1.jpg);
+    background-position: top center;
+    background-size: cover;
+    transition: 0.3s;
+}
+.gridMargaret1:hover{
+    transform: scale(1.1);
+}
+
+.gridMargaret2{
+    grid-column: 2/4;
+    grid-row: 1/2;
+    background-image: url(./media/item2.jpg);
+    background-position: right center;
+    background-size: cover;
+    filter: grayscale(75%);
+}
+.gridMargaret2:hover{
+    filter: grayscale(0%);
+    filter: brightness(0.8);
+}
+
+.gridMargaret3{
+    grid-column: 1/3;
+    grid-row: 2/3;
+    background-image: url(./media/item3.jpg);
+    background-position: center center;
+    background-size: cover;
+    filter: grayscale(100%);
+}
+.gridMargaret3:hover{
+    filter: grayscale(0%);
+    filter: brightness(0.7);
+}
+
+.gridMargaret4{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    background-image: url(./media/item4.jpg);
+    background-position: center center;
+    background-size: cover;
+    transition: 0.3s;
+}
+.gridMargaret4:hover{
+    transform: scale(1.1);
+}
+
+
+
+.containerCutPage2P3{
+    padding-bottom: 100px;
+}
+
+.cutPage2P3{
+    height: 50px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.956);
+    box-shadow: 2px 2px 4px rgba(243, 243, 243, 0.34);
+}
+
+/* Page 4 "Apollo Program" */
+.pg4{
+    background-image: url(./media/bgApolloProgram.jpg);
+    margin-top: -95px;
+    padding-top: 105px;
+    height: min-content;
+    color: rgb(222, 222, 222);
+}
+
+.cutpage1P4{
+    margin-top: 100px;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.706);
+    box-shadow: 2px 2px 4px rgba(243, 243, 243, 0.705);
+}
+
+.containerTituloP4{
+    padding: 100px 10px 100px 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.tituloP4{
+    color: rgb(222, 222, 222);
+    background-color: rgba(255, 255, 255, 0.335);
+    text-align: center;
+    padding: 10px 20px 20px 20px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 4px;
+    box-shadow: 6px 4px 10px rgba(243, 243, 243, 0.34);
+}
+
+.containerCuerpo1P4{
+    padding: 50px 20px 20px 20px;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cuerpo1P4{
+    margin-top: 50px;
+    background-color: rgba(16, 16, 16, 0.374);
+    padding: 5px 20px 5px 20px;
+    height: min-content;
+    width: 600px;
+    text-align: justify;
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: -4px 6px 10px rgba(243, 243, 243, 0.34);
+}
+
+.cuerpo2P4{
+    margin-top: 50px;
+    background-color: rgba(16, 16, 16, 0.374);
+    padding: 5px 20px 5px 20px;
+    height: min-content;
+    width: 600px;
+    text-align: justify;
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 6px 4px 10px rgba(243, 243, 243, 0.34);
+}
+.containerCuerpo2P4{
+    padding: 50px 20px 100px 20px;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img1P4{
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 20px 20px 20px 20px;
+    box-shadow: -4px 6px 10px rgba(243, 243, 243, 0.34);
+    filter: brightness(0.9);
+}
+
+.img2P4{
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 20px 20px 20px 20px;
+    box-shadow: 6px 4px 10px rgba(243, 243, 243, 0.34);
+    filter: brightness(0.8);
+}
+
+.cutpage2P4{
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.706);
+    box-shadow: 2px 2px 4px rgba(243, 243, 243, 0.705);
+}
+.postionCutPage2P4{
+    padding-bottom: 100px;
+}
+
+/* page 5 "Astronauts*/
+.pg5{
+    background-image: url(./media/bgAboutUs.jpg);
+    margin-top: -95px;
+    color: rgb(222, 222, 222);
+    padding-top: 80px;
+    height: auto;
+}
+
+.containerAstronauts{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+    padding: 0px 20px 0px 20px;
+}
+
+.containerTituloP5{
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+.containerCuerpoP4{
+    height: auto;
+    margin-bottom: 100px;
+}
+
+.containerGrid{
+    width: 100%;
+    height: auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: 300px 300px 300px 300px;
+    padding: 10px;
+    padding-bottom: 110px;
+    grid-gap: 25px
+}
+
+.grid{
+    border: 2px solid black;
+    border-radius: 12px;
+    filter: brightness(0.8);
+    transition: 0.3s;
+    box-shadow: 2px 2px 10px rgb(222, 222, 222);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    transition: 0.3s;
+}
+.grid:hover{
+    filter: brightness(1.1);
+    box-shadow: 2px 2px 10px black;
+    transform: scale(1.1);
+}
+
+.grid a{
+    text-decoration: none;
+}
+
+.bio{
+    color: rgb(222, 222, 222);
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 1px solid white;
+    border-radius: 10px;
+    width: min-content;
+    height: min-content;
+    box-shadow: 2px 2px 10px rgb(19, 19, 19);
+    margin-bottom: 10px;
+    padding: 2px;
+}
+.bio:hover{
+    filter: brightness(1.1);
+    box-shadow: 4px 4px 10px rgb(19, 19, 19);
+}
+
+
+.grid1{
+    grid-column: 1/2 ;
+    grid-row: 1/5;
+    background-image: url(./media/spacecraft.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.grid2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-image: url(./media/Neil-Armstrong.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.grid3{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background-image: url(./media/Buzz-Aldrin.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.grid4{
+    grid-column: 4/5;
+    grid-row: 1/2;
+    background-image: url(./media/Charles\ Conrad.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.grid5{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-image: url(./media/Alan-Bean.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.grid6{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    background-image: url(./media/Alan\ Shepard.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.grid7{
+    grid-column: 4/5;
+    grid-row: 2/3;
+    background-image: url(./media/Ed\ Mitchell.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.grid8{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    background-image: url(./media/Dave\ Scott.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.grid9{
+    grid-column: 3/4;
+    grid-row: 3/4;
+    background-image: url(./media/Jim\ Irwin.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.grid10{
+    grid-column: 4/5;
+    grid-row: 3/4;
+    background-image: url(./media/John\ W.\ Young.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.grid11{
+    grid-column: 2/3;
+    grid-row: 4/5;
+    background-image: url(./media/Charles\ Moss\ Duke\ Jr.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.grid12{
+    grid-column: 3/4;
+    grid-row: 4/5;
+    background-image: url(./media/Eugene\ Cernan.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.grid13{
+    grid-column: 4/5;
+    grid-row: 4/5;
+    background-image: url(./media/Harrison\ Schmitt.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+
+/* inicio */
+@media (max-width: 607px){
+    .presentacion h2{
+        font-size: 38px;
+    }
+    .cuerpoConcept{
+        font-size: 22px;
+    }
+}
+
+
+@media (max-width: 930px){
+    .ContainerCarta{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Seccion 1 */
+@media (max-width: 700px){
+    .containerSeccion1P2{
+        padding: 100px 10px 100px 10px;
+    }
+
+    .imgSeccion1P2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+        height: auto;
+        overflow: hidden;
+        background-position: center center;
+    }
+
+    .cuerpoP2{
+    width:100%;
+    padding: 45px 5px 5px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    }
+
+}
+
+/* Apollo */
+@media (max-width: 800px){
+    .img1P4{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        overflow: hidden;
+    }
+    .img2P4{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        overflow: hidden;
+    }
+}
+
+/* Astronauts */
+@media (max-width: 906px){
+    .grid1{
+        display: none;
+    }
+    .containerGrid{
+        grid-template-columns: repeat(3, 200px);
+        grid-template-rows: 300px 300px 300px 300px;
+        padding: 10px;
+        padding-bottom: 90px;
+        grid-gap: 25px
+    }
+    .grid2{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        background-image: url(./media/Neil-Armstrong.jpg);
+        background-position: center center;
+        background-size: cover;
+    }
+    .grid3{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        background-image: url(./media/Buzz-Aldrin.jpg);
+        background-position: center center;
+        background-size: cover;
+    }
+    .grid4{
+        grid-column: 3/4;
+        grid-row: 1/2;
+        background-image: url(./media/Charles\ Conrad.jpg);
+        background-position: center center;
+        background-size: cover;
+    }
+    .grid5{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        background-image: url(./media/Alan-Bean.jpg);
+        background-position: center center;
+        background-size: cover;
+    }
+    .grid6{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        background-image: url(./media/Alan\ Shepard.jpg);
+        background-position: center center;
+        background-size: cover;
+    }
+    .grid7{
+        grid-column: 3/4;
+        grid-row: 2/3;
+        background-image: url(./media/Ed\ Mitchell.jpg);
+        background-position: center center;
+        background-size: cover;
+    }
+    .grid8{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        background-image: url(./media/Dave\ Scott.jpg);
+        background-position: center center;
+        background-size: cover;
+    }
+    .grid9{
+        grid-column: 2/3;
+        grid-row: 3/4;
+        background-image: url(./media/Jim\ Irwin.jpg);
+        background-position: center center;
+        background-size: cover;
+    }
+    .grid10{
+        grid-column: 3/4;
+        grid-row: 3/4;
+        background-image: url(./media/John\ W.\ Young.jpg);
+        background-position: center center;
+        background-size: cover;
+    }
+    .grid11{
+        grid-column: 1/2;
+        grid-row: 4/5;
+        background-image: url(./media/Charles\ Moss\ Duke\ Jr.jpg);
+        background-position: center center;
+        background-size: cover;
+    }
+    .grid12{
+        grid-column: 2/3;
+        grid-row: 4/5;
+        background-image: url(./media/Eugene\ Cernan.jpg);
+        background-position: center center;
+        background-size: cover;
+    }
+    .grid13{
+        grid-column: 3/4;
+        grid-row: 4/5;
+        background-image: url(./media/Harrison\ Schmitt.jpg);
+        background-position: center center;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 679px){
+    .grid1{
+        display: none;
+    }
+    .containerGrid{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 200px 200px 200px 200px;
+        padding: 10px;
+        padding-bottom: 90px;
+        grid-gap: 20px
+    }
+    .grid2{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        background-image: url(./media/Neil-Armstrong.jpg);
+        background-position: center center;
+        background-size: cover;
+    }
+    .grid3{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        background-image: url(./media/Buzz-Aldrin.jpg);
+        background-position: center center;
+        background-size: cover;
+    }
+    .grid4{
+        grid-column: 3/4;
+        grid-row: 1/2;
+        background-image: url(./media/Charles\ Conrad.jpg);
+        background-position: center center;
+        background-size: cover;
+    }
+    .grid5{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        background-image: url(./media/Alan-Bean.jpg);
+        background-position: center center;
+        background-size: cover;
+    }
+    .grid6{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        background-image: url(./media/Alan\ Shepard.jpg);
+        background-position: center center;
+        background-size: cover;
+    }
+    .grid7{
+        grid-column: 3/4;
+        grid-row: 2/3;
+        background-image: url(./media/Ed\ Mitchell.jpg);
+        background-position: center center;
+        background-size: cover;
+    }
+    .grid8{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        background-image: url(./media/Dave\ Scott.jpg);
+        background-position: center center;
+        background-size: cover;
+    }
+    .grid9{
+        grid-column: 2/3;
+        grid-row: 3/4;
+        background-image: url(./media/Jim\ Irwin.jpg);
+        background-position: center center;
+        background-size: cover;
+    }
+    .grid10{
+        grid-column: 3/4;
+        grid-row: 3/4;
+        background-image: url(./media/John\ W.\ Young.jpg);
+        background-position: center center;
+        background-size: cover;
+    }
+    .grid11{
+        grid-column: 1/2;
+        grid-row: 4/5;
+        background-image: url(./media/Charles\ Moss\ Duke\ Jr.jpg);
+        background-position: center center;
+        background-size: cover;
+    }
+    .grid12{
+        grid-column: 2/3;
+        grid-row: 4/5;
+        background-image: url(./media/Eugene\ Cernan.jpg);
+        background-position: center center;
+        background-size: cover;
+    }
+    .grid13{
+        grid-column: 3/4;
+        grid-row: 4/5;
+        background-image: url(./media/Harrison\ Schmitt.jpg);
+        background-position: center center;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 975px){
+    .gridContainerMargaret{
+        width: 100%;
+        height: auto;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 300px 300px;
+        padding: 0px 10px 100px 10px;
+        grid-gap: 20px
+    }
+}
