@@ -987,10 +987,13 @@ footer{
 
 
 /* inicio */
-@media (max-width: 607px){
+
+@media (max-width: 720px){
     .presentacion h2{
-        font-size: 38px;
+        font-size: 34px;
     }
+}
+@media (max-width: 607px){
     .cuerpoConcept{
         font-size: 22px;
     }
