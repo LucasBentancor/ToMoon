@@ -77,6 +77,22 @@ header .logo{
     height: 65px;
     width: 65px;
     filter: drop-shadow(6px 6px 10px black);
+    animation-name: luna;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+@keyframes luna{
+    0%{
+        opacity: 0;
+        transform: rotate(0deg);
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+        transform: rotate(360deg);
+    }
 }
 
 .luna:hover{
@@ -85,7 +101,7 @@ header .logo{
 
 .background1{
     z-index: 2;
-    background-image:url(./media/galaxy2.jpg);
+    background-image:url(./media/fondo\ universo\ nasa.jpg);
     height: 984px;
     width: 100%;
     margin: -95px 0px 0px 0px;
@@ -111,29 +127,6 @@ header .logo{
     font-size: 58px;
     color: rgb(9, 9, 9);
     filter: drop-shadow(4px 2px 4px rgb(255, 255, 255));
-    animation-name: space;
-    transition: 1s;
-}
-@keyframes space{
-    0%{
-        opacity: 0;
-    }
-    20%{
-        opacity: 1;
-        scale: 0.5;
-    }
-    40%{
-        scale: 0.8;
-    }
-    60%{
-        scale: 1;
-    }
-    80%{
-        scale: 1.2;
-    }
-    100%{
-        scale: 1;
-    }
 }
 
 .cutPage1{   
@@ -148,7 +141,7 @@ header .logo{
     height: min-content;
     padding-bottom: 60px;
     width: 100%;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.945), rgba(22, 0, 22, 0.904), rgba(0, 0, 0, 0.911));
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.945), rgba(44, 44, 44, 0.904), rgba(0, 0, 0, 0.911));
 }
 
 /* Titulo de secciones */
@@ -215,7 +208,7 @@ header .logo{
 
 #seccion1{
     color: rgb(222, 222, 222);
-    background-color: rgba(21, 1, 40, 0.88);
+    background-color: #380138;
     border: 2px solid black;
     text-align: center;
     padding: 4px 4px 4px 4px;
@@ -266,7 +259,7 @@ header .logo{
 
 #seccion2{
     color: rgb(222, 222, 222);
-    background-color: rgba(21, 1, 40, 0.88);
+    background-color: #380138;
     border: 2px solid black;
     text-align: center;
     padding: 4px 4px 4px 4px;
@@ -316,7 +309,7 @@ header .logo{
 
 #apollo{
     color: rgb(222, 222, 222);
-    background-color: rgba(21, 1, 40, 0.88);
+    background-color: #380138;
     border: 2px solid black;
     text-align: center;
     padding: 4px 4px 4px 4px;
@@ -367,7 +360,7 @@ header .logo{
 
 #astronauts{
     color: rgb(222, 222, 222);
-    background-color: rgba(21, 1, 40, 0.88);
+    background-color: #380138;
     border: 2px solid black;
     text-align: center;
     padding: 4px 4px 4px 4px;
@@ -394,7 +387,7 @@ header .logo{
 .containerConcept{
     height: auto;
     width: 100%;
-    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(88, 0, 88, 0.904), rgb(0, 0, 0));
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(88, 21, 0, 0.904), rgb(0, 0, 0));
     color: rgb(222, 222, 222);
     display: flex;
     justify-content: space-around;
@@ -464,16 +457,14 @@ footer{
     bottom: 110px;
     transition: all 0.3s;
     filter: drop-shadow(4px 2px 4px rgba(229, 229, 229, 0.734));
+    animation-name: up;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
 }
 
 .up:hover{
     filter: drop-shadow(4px 2px 4px rgb(229, 229, 229));
     transform: scale(1.10);
-}
-
-.proximamente{
-    display: flex;
-    justify-content: center;
 }
 
 /* page 2 "Seccion 1" */
@@ -655,6 +646,7 @@ footer{
 .gridM{
     border: 1px solid rgb(222, 222, 222);
     box-shadow: 2px -2px 8px rgba(255, 255, 255, 0.363);
+    margin: 5px;
 }
 
 
@@ -825,7 +817,8 @@ footer{
 
 /* page 5 "Astronauts*/
 .pg5{
-    background-image: linear-gradient(to bottom, rgba(35, 0, 58, 0.966), rgb(7, 7, 7), rgb(5, 5, 5));
+    background-image: url(./media/fondo\ universo\ nasa\ II.jpg);
+    
     margin-top: -95px;
     color: rgb(222, 222, 222);
     padding-top: 80px;
@@ -995,10 +988,13 @@ footer{
 
 
 /* inicio */
-@media (max-width: 607px){
+
+@media (max-width: 720px){
     .presentacion h2{
-        font-size: 38px;
+        font-size: 34px;
     }
+}
+@media (max-width: 607px){
     .cuerpoConcept{
         font-size: 22px;
     }
