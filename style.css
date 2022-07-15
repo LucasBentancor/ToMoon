@@ -734,7 +734,7 @@ footer{
 
 /* Page 4 "Apollo Program" */
 .pg4{
-    background-image: linear-gradient(to bottom, rgba(8, 8, 8, 0.966), rgb(70, 39, 0),  rgba(8, 8, 8, 0.966));
+    background-image: linear-gradient(to bottom, rgba(8, 8, 8, 0.966), rgb(44, 25, 1),  rgba(8, 8, 8, 0.966));
     margin-top: -95px;
     padding-top: 105px;
     height: min-content;
@@ -745,7 +745,7 @@ footer{
     margin-top: 100px;
     height: 50px;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.706);
+    background-color: rgba(153, 151, 151, 0.699);
     box-shadow: 2px 2px 4px rgba(243, 243, 243, 0.705);
 }
 
@@ -827,7 +827,7 @@ footer{
 .cutpage2P4{
     height: 50px;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.706);
+    background-color: rgba(153, 151, 151, 0.699);
     box-shadow: 2px 2px 4px rgba(243, 243, 243, 0.705);
 }
 .postionCutPage2P4{
