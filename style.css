@@ -78,13 +78,131 @@ header .logo{
     height: 65px;
     width: 65px;
     filter: drop-shadow(6px 6px 10px black);
-    animation-name: luna;
-    animation-duration: 1s;
     animation-timing-function: linear;
 }
 
 .luna:hover{
     filter:brightness(1.1)
+}
+
+.menuDesplegable{
+    display: none;
+    position: absolute;
+    width: max-content;
+    right: 0%;
+    background-color: rgba(0, 0, 0, 0.782);
+    padding: 10px 10px 15px 10px;
+    margin-top: 5px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.823);
+
+}
+.menu:hover > .menuDesplegable {
+    display: block;
+    animation-name: desplegable;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+}
+@keyframes desplegable{
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 0.25;
+    }
+    50%{
+        opacity: 0.50;
+    }
+    75%{
+        opacity: 0.75;
+    }
+    100%{
+        opacity: 1;        
+    }
+}
+
+.aM{
+    text-decoration: none;
+    color: rgb(222, 222, 222);
+}
+.aM h2{
+    font-size: 26px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 15px;
+    background-color: rgba(255, 255, 255, 0.192);
+    box-shadow: 0px 0px 5px white;
+    filter: brightness(0.9);
+    transition: 0.3s;
+}
+.aM h2:hover{
+    transform: scale(1.04);
+    filter: brightness(1);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.678);
+}
+
+.mH{
+    text-decoration: none;
+    color: rgb(222, 222, 222);
+}
+.mH h2{
+    font-size: 26px; 
+    border: 0px solid transparent;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 0px 10px 0px 10px;
+    background-color: rgba(255, 255, 255, 0.192);
+    box-shadow: 0px 0px 5px white;
+    filter: brightness(0.9);
+    transition: 0.3s;
+}
+.mH h2:hover{
+    transform: scale(1.04);
+    filter: brightness(1);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.678);
+}
+
+
+.aP{
+    text-decoration: none;
+    color: rgb(222, 222, 222);
+}
+.aP h2{
+    font-size: 26px;
+    border: 0px solid transparent;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 15px;
+    background-color: rgba(255, 255, 255, 0.192);
+    box-shadow: 0px 0px 5px white;
+    filter: brightness(0.9);
+    transition: 0.3s;
+}
+.aP h2:hover{
+    transform: scale(1.04);
+    filter: brightness(1);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.678);
+}
+
+
+.a{
+    text-decoration: none;
+    color: rgb(222, 222, 222);
+}
+.a h2{
+    font-size: 26px;
+    border: 0px solid transparent;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.192);
+    box-shadow: 0px 0px 5px white;
+    filter: brightness(0.9);
+    transition: 0.3s;
+}
+.a h2:hover{
+    transform: scale(1.04);
+    filter: brightness(1);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.678);
 }
 
 
@@ -1043,6 +1161,9 @@ footer{
 @media (max-width: 607px){
     .cuerpoConcept{
         font-size: 22px;
+    }
+    .menuDesplegable{
+        width: 100%;
     }
 }
 
