@@ -115,8 +115,27 @@ header .logo{
     font-size: 58px;
     color: rgb(9, 9, 9);
     filter: drop-shadow(4px 2px 4px rgb(255, 255, 255));
+    animation-name: space;
+    animation-duration: 0.8s;
+    animation-timing-function: linear;
 }
-
+@keyframes space {
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 0.25;
+    }
+    50%{
+        opacity: 0.50;
+    }
+    75%{
+        opacity: 0.75;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 .cutPage1{   
     height: 120px;
     width: 100%;
