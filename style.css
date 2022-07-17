@@ -613,22 +613,6 @@ footer{
     color: rgb(235, 235, 235);
 }
 
-/* elemento para subir/ir a inicio */
-.up{
-    position: fixed;
-    right: 10px;
-    bottom: 110px;
-    transition: all 0.3s;
-    filter: drop-shadow(4px 2px 4px rgba(229, 229, 229, 0.734));
-    animation-name: up;
-    animation-duration: 0.5s;
-    animation-iteration-count: 1;
-}
-
-.up:hover{
-    filter: drop-shadow(4px 2px 4px rgb(229, 229, 229));
-    transform: scale(1.10);
-}
 
 /* page 2 "Seccion 1" */
 .pg2{
@@ -639,7 +623,7 @@ footer{
 }
 
 .containerTituloP2{
-    padding: 195px 10px 0px 10px;
+    padding: 170px 10px 0px 10px;
     display: flex;
     justify-content: center;
 }
@@ -648,8 +632,7 @@ footer{
     color: rgb(222, 222, 222);
     background-color: rgba(226, 226, 226, 0.178);
     text-align: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin: 100px 20px 100px 20px;
     padding: 10px 20px 20px 20px;
     border: 1px solid rgba(241, 241, 241, 0.767);
     border-top-left-radius: 4px;
@@ -663,7 +646,7 @@ footer{
     display: flex;
     flex-wrap: wrap;
     justify-content:space-around;
-    padding: 100px 20px 100px 20px;
+    padding: 0px 20px 100px 20px;
 }
 
 .imgSeccion1P2{
@@ -729,8 +712,7 @@ footer{
     color: rgb(222, 222, 222);
     background-color: rgba(226, 226, 226, 0.178);
     text-align: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin: 100px 20px 100px 20px;
     padding: 10px 20px 20px 20px;
     border: 1px solid rgba(241, 241, 241, 0.767);
     border-top-left-radius: 4px;
@@ -885,14 +867,12 @@ footer{
 /* Page 4 "Apollo Program" */
 .pg4{
     background-image: linear-gradient(to bottom, rgba(8, 8, 8, 0.966), rgb(44, 25, 1),  rgba(8, 8, 8, 0.966));
-    margin-top: -95px;
     padding-top: 105px;
     height: min-content;
     color: rgb(222, 222, 222);
 }
 
 .cutpage1P4{
-    margin-top: 100px;
     height: 50px;
     width: 100%;
     background-color: rgba(153, 151, 151, 0.699);
@@ -909,7 +889,7 @@ footer{
     color: rgb(222, 222, 222);
     background-color: rgba(226, 226, 226, 0.178);
     text-align: center;
-    margin-top: 100px;
+    margin: 100px 20px 0px 20px;
     padding: 10px 20px 20px 20px;
     border: 1px solid rgba(241, 241, 241, 0.767);
     border-top-left-radius: 4px;
