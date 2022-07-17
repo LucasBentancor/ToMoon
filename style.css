@@ -294,7 +294,7 @@ header .logo{
     height: min-content;
     padding-bottom: 60px;
     width: 100%;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.945), rgb(44, 44, 44), rgba(0, 0, 0, 0.911));
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(44, 44, 44), rgb(0, 0, 0));
 }
 
 /* Titulo de secciones */
@@ -308,8 +308,7 @@ header .logo{
     color: rgb(222, 222, 222);
     background-color: rgba(226, 226, 226, 0.178);
     text-align: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin: 100px 20px 100px 20px;
     padding: 10px 20px 20px 20px;
     border: 1px solid rgba(241, 241, 241, 0.767);
     border-top-left-radius: 4px;
@@ -532,8 +531,7 @@ header .logo{
 .cutPage2{   
     height: 120px;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.956);
-    box-shadow: 2px 2px 4px rgb(5, 5, 5);
+    background-color: rgb(0, 0, 0);
 }
 
 
@@ -541,7 +539,7 @@ header .logo{
 .containerConcept{
     height: auto;
     width: 100%;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.945), rgb(44, 44, 44), rgba(0, 0, 0, 0.911));
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(44, 44, 44), rgb(0, 0, 0));
     color: rgb(222, 222, 222);
     display: flex;
     justify-content: space-around;
