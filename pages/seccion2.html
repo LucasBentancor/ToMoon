@@ -6,31 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon"   href="../media/shortcut-icon.jpg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="../style.css">
-    <title>To Moon</title>
+    <title>Bootstrap</title>
 </head>
 <body>
     <header class="header">
-        <div class="logo">TO MOON</div>
-        <nav>
-            <div class="menu">
-                <a href="../index.html" id="luna">
-                    <img class="luna" src="../media/menudesplegable.png" alt="luna">
-                </a>
-                <div class="menuDesplegable">
-                    <a class="aM" href="./seccion1.html">
-                        <h2>About Moon</h2>
-                    </a>
-                    <a class="mH" href="./seccion2.html">
-                        <h2>Margaret Hamilton</h2>
-                    </a>
-                    <a class="aP" href="./apollo.html">
-                        <h2>Apollo Program</h2>
-                    </a>
-                    <a class="a" href="./astronauts.html">
-                        <h2>Astronauts</h2>
-                    </a>
-                </div>
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+            <a class="navbar-brand" href="../index.html">To Moon</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/seccion1.html">About Moon</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/seccion2.html">Margaret Hamilton</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/apollo.html">Apollo Program</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/astronauts.html">Astronaut</a>
+                    </li>
+                </ul>
             </div>
         </nav>
     </header>
@@ -42,34 +43,70 @@
                 <div class="cutPage1P3"></div>
             </section>
 
-            <div class="containerTituloP3">
-                <h3 class="tituloP3">Margaret Hamilton</h3>
+            <div class="container-sm">
+                <h3 class="p-3 m-5 bg-dark text-center text-white">Margaret Hamilton</h3>
             </div>
 
-            <section class="containerMargaretP3">
-                <div id="containerMargaret">
-                    <img id="Margaret" src="../media/Margaret_Hamilton.jpg" alt="Margaret Hamilton">
+            <section>
+
+                <div class="container-sm text-center">
+                    <img class="w-50 h-auto border border-white rounded mb-5" src="../media/Margaret_Hamilton.jpg" alt="Margaret Hamilton">
                 </div>
-                <div class="containerCuerpoMargaret">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit aut voluptas, enim doloribus ut architecto corrupti sint voluptatibus illum earum cumque perspiciatis repudiandae, eligendi explicabo impedit recusandae! Consectetur quia aliquam debitis laborum inventore a illo sint eum maiores autem voluptas, quos in adipisci quod molestiae asperiores doloribus magni nobis omnis tenetur iusto. Ratione architecto tempora odio. Non, commodi similique! Beatae quasi officiis ipsam temporibus distinctio, perspiciatis rem animi ipsum. Aspernatur quas sit ipsum labore dolor?</p>
+
+                <div class="container-fluid">
+                    <p class="text-white text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate at aperiam earum doloribus dolorum fugiat, assumenda molestias ad, neque aliquam ipsum modi error culpa recusandae eveniet ab, voluptas quisquam! Officiis consequatur autem at sunt consectetur exercitationem, esse quibusdam beatae magnam, dolore fugiat necessitatibus hic libero voluptatibus ipsam repudiandae ratione quod magni laudantium. Voluptates mollitia, adipisci necessitatibus quo odit officiis porro id! Delectus sed iste ut sunt sit, assumenda deleniti, iusto minus porro, natus at consequatur necessitatibus maiores enim! Corrupti excepturi numquam optio! Deserunt repudiandae mollitia sit rem, eum magnam quis aperiam a delectus nostrum omnis necessitatibus, ad sint cumque doloremque non eligendi vel fugiat? Facere eaque praesentium culpa non animi, hic amet totam atque asperiores architecto quam quaerat similique fugit perferendis libero dolore a, nesciunt ipsum? Exercitationem explicabo architecto, ex provident placeat reiciendis cupiditate error veniam modi excepturi itaque commodi molestiae eos molestias quos ea repudiandae ducimus beatae similique obcaecati.</p>
                 </div>
-                <div class="containerIframeMargaret">
+
+                <div class="container-fluid float-left mt-5 mb-5 ">
                     <iframe width="440" height="316" src="https://www.youtube.com/embed/1Z8Ycd3a6i8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div><hr>
-                <div class="containerSubTituloMargaret">
+                </div>
+
+                <div class="container-fluid float-left text-white mb-5">
                     <h3>Sub Titulo</h3>
                 </div>
-                <div class="containerCuerpoMargaret2">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos iure dolorem perspiciatis qui, officia aliquid mollitia unde non recusandae itaque rem quod quam illo repellat minus. Eos expedita tempore autem, amet ullam reprehenderit voluptas culpa nihil! Mollitia tenetur totam quibusdam aliquid ipsa. Accusamus amet reiciendis, facere voluptates commodi quas sequi nisi ut ab, assumenda maiores dolorum. Recusandae quos rerum nisi dolor amet optio, quis exercitationem, officia architecto adipisci obcaecati ratione natus vel, incidunt itaque molestiae!</p>
+
+                <div class="container-fluid text-white text-justify mb-5">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos iure dolorem perspiciatis qui, officia aliquid mollitia unde non recusandae itaque rem quod quam illo repellat minus. Eos expedita tempore autem, amet ullam reprehenderit voluptas culpa nihil! Mollitia tenetur totam quibusdam aliquid ipsa. Accusamus amet reiciendis, facere voluptates commodi quas sequi nisi ut ab, assumenda maiores dolorum. Recusandae quos rerum nisi dolor amet optio, quis exercitationem, officia architecto adipisci obcaecati ratione natus vel, incidunt itaque molestiae!</p>   
                 </div>
-                <section class="gridContainerMargaret">
-                    <div class="gridM gridMargaret1"></div>
-                    <div class="gridM gridMargaret2"></div>
-                    <div class="gridM gridMargaret3"></div>
-                    <div class="gridM gridMargaret4"></div>
+
+                <section>
+                    <div id="demo" class="carousel slide" data-ride="carousel">
+
+                        <ul class="carousel-indicators">
+                            <li data-target="#demo" data-slide-to="0" class="active"></li>
+                            <li data-target="#demo" data-slide-to="1"></li>
+                            <li data-target="#demo" data-slide-to="2"></li>
+                        </ul>
+
+                        <div class="carousel-inner text-center">
+                            <div class="carousel-item active">
+                                <img src="../media/item1 carrusel.jpg" width="50%" height="auto">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../media/item2 carrusel.jpg" width="50%" height="auto">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../media/item3 carrusel.jpg" width="50%" height="auto">
+                            </div>
+                        </div>
+
+                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#demo" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
                 </section>
-                <div class="containerCuerpoMargaret2">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam eius cumque repudiandae iste numquam. Ipsam placeat est dolore repellendus, quam vel minima eius earum temporibus reiciendis aliquid sint voluptates. Neque dicta voluptate vero eum voluptatem doloremque ea similique, ex quo non quisquam facere fuga itaque impedit qui. Veritatis atque quibusdam ad vero deserunt rem praesentium accusantium doloremque repellendus debitis officiis accusamus magnam nostrum minima distinctio eum, magni, aspernatur culpa eveniet.</p>
+                <!-- <section class="container-fluid">
+                    <div class="row justify-content-between m-5">
+                        <img class="img-fluid mb-3 col-sm-12 col-md-5 col-lg-4" src="../media/item1.jpg">
+                        <img class="img-fluid col-sm-12 col-md-5 col-lg-4 h-25" src="../media/item4.jpg">
+                    </div>
+                </section> -->
+
+                <div class="container-fluid text-white text-justify mt-5 mb-5">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit nostrum maiores impedit praesentium eligendi soluta possimus repellat, itaque ullam voluptas fuga, ipsam labore rem modi, dolore recusandae. Distinctio minus consequuntur inventore mollitia eum iure corrupti tempore laborum facilis rerum pariatur impedit magnam quae cumque vel, praesentium, molestias hic animi! Excepturi blanditiis numquam optio aperiam perspiciatis impedit eius a, consectetur reprehenderit tenetur laboriosam omnis incidunt repellendus in iusto sunt! Odio quia eum minus cumque quos exercitationem sed facilis accusamus consequuntur inventore! Ullam, accusantium et consectetur suscipit ab veritatis distinctio mollitia similique blanditiis incidunt reprehenderit quos excepturi debitis laudantium possimus earum assumenda.</p>
                 </div>
             </section>
 
@@ -93,6 +130,10 @@
             </a>
         </div>
     </footer>
-        
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
 </body>
 </html>

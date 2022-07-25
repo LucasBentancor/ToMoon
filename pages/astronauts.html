@@ -7,111 +7,161 @@
     , initial-scale=1.0">
     <link rel="shortcut icon"   href="../media/shortcut-icon.jpg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="../style.css">
-    <title>To Moon</title>
+    <title>Bootstrap</title>
 </head>
 <body>
     <header class="header">
-        <div class="logo">TO MOON</div>
-        <nav>
-            <div class="menu">
-                <a href="../index.html" id="luna">
-                    <img class="luna" src="../media/menudesplegable.png" alt="luna">
-                </a>
-                <div class="menuDesplegable">
-                    <a class="aM" href="./seccion1.html">
-                        <h2>About Moon</h2>
-                    </a>
-                    <a class="mH" href="./seccion2.html">
-                        <h2>Margaret Hamilton</h2>
-                    </a>
-                    <a class="aP" href="./apollo.html">
-                        <h2>Apollo Program</h2>
-                    </a>
-                    <a class="a" href="./astronauts.html">
-                        <h2>Astronauts</h2>
-                    </a>
-                </div>
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+            <a class="navbar-brand" href="../index.html">To Moon</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/seccion1.html">About Moon</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/seccion2.html">Margaret Hamilton</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/apollo.html">Apollo Program</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/astronauts.html">Astronaut</a>
+                    </li>
+                </ul>
             </div>
         </nav>
     </header>
 
     <main>
         <section class="pg5">
-            <div class="containerAstronauts">
-                <div class="containerTituloP5">
-                    <h3>Astronauts</h3>
-                </div>
-                <div class="containerCuerpoP4">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat aut a quo. Excepturi cumque earum magnam nemo dolor, eaque, inventore blanditiis amet at illo corrupti eius fugiat dignissimos repellendus rerum nobis vitae, dolores deserunt doloribus cum libero perferendis voluptates repellat! Fugiat et quod esse illum nobis minima maiores voluptates adipisci ad velit a minus rerum, inventore sequi quidem atque blanditiis officia. Suscipit laudantium odit dolorem vero labore perspiciatis, sed, rerum dolorum repudiandae ipsam, esse quam inventore. Harum dolor fugiat pariatur voluptatibus facilis vel animi rerum, debitis aspernatur saepe eaque dolores tempora, facere non! Unde ut pariatur ad repellendus. Maiores, sint.</p>
-                </div>
+            <div class="container-sm mt-5">
+                <h3 class="bg-dark text-center">Astronauts</h3>
             </div>
-        <section class="containerGrid">
-            <div class="grid grid1"></div>
-            <div class="grid grid2">
-                <a href="https://www.biography.com/astronaut/neil-armstrong">
-                    <div class="bio">Biography</div>
-                </a>
-            </div>
-            <div class="grid grid3">
-                <a href="https://www.britannica.com/biography/Buzz-Aldrin">
-                    <div class="bio">Biography</div>
-                </a>
-            </div>
-            <div class="grid grid4">
-                <a href="https://kids.britannica.com/students/article/Charles-Conrad-Jr/310817">
-                    <div class="bio">Biography</div>
-                </a>
-            </div>
-            <div class="grid grid5">
-                <a href="https://www.britannica.com/biography/Alan-Bean">
-                    <div class="bio">Biography</div>
-                </a>
-            </div>
-            <div class="grid grid6">
-                <a href="https://www.biography.com/astronaut/alan-shepard">
-                    <div class="bio">Biography</div>
-                </a>
-            </div>
-            <div class="grid grid7">
-                <a href="https://www.britannica.com/biography/Edgar-D-Mitchell">
-                    <div class="bio">Biography</div>
-                </a>
-            </div>
-            <div class="grid grid8">
-                <a href="https://www.britannica.com/biography/David-Scott">
-                    <div class="bio">Biography</div>
-                </a>
-            </div>
-            <div class="grid grid9">
-                <a href="https://www.britannica.com/biography/James-B-Irwin">
-                    <div class="bio">Biography</div>
-                </a>
-            </div>
-            <div class="grid grid10">
-                <a href="https://www.britannica.com/biography/John-W-Young">
-                    <div class="bio">Biography</div>
-                </a>
-            </div>
-            <div class="grid grid11">
-                <a href="https://kids.britannica.com/students/article/Charles-M-Duke-Jr/321900">
-                    <div class="bio">Biography</div>
-                </a>
-            </div>
-            <div class="grid grid12">
-                <a href="https://www.britannica.com/biography/Eugene-Andrew-Cernan">
-                    <div class="bio">Biography</div>
-                </a>
-            </div>
-            <div class="grid grid13">
-                <a href="https://www.britannica.com/biography/Harrison-Schmitt">
-                    <div class="bio">Biography</div>
-                </a>
-            </div>
-        </section>
-        </section>
 
+            <div class="container-fluid mt-5 mb-3 p-5">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque tempore at molestias placeat officiis cupiditate, eum blanditiis reiciendis similique, tenetur molestiae. Placeat, maxime? Enim perferendis laboriosam in aliquid dicta minus ipsum natus fuga expedita molestiae, dolorum ipsa nesciunt nisi dignissimos quia odit ratione numquam vero accusantium ab soluta ea. At inventore voluptas voluptates, facilis odio deserunt voluptate corporis, voluptatem dolor minus, iure ea. Fugit illo blanditiis iusto consectetur, delectus unde libero odio, reprehenderit aperiam repellat ad nam, rem maiores molestias voluptates necessitatibus consequatur rerum itaque similique! Laboriosam maxime ad animi aut dolor cupiditate odio repellat asperiores quae voluptates nemo tempore consequatur doloribus, rem soluta pariatur tempora illum quas! Magni ut atque asperiores. In deleniti corporis libero sapiente maxime, nisi impedit? Quisquam reprehenderit dicta fuga qui.</p>
+            </div>
+            
+            <section class="container-fluid">
+                <div class="row p-5">
+                    
+                    <article class="container col-sm-5 col-md-5 col-lg-4 col-xl-3 mb-5">
+                        <div class="card img-fluid" style="width:500px; height:auto">
+                            <img class="card-img-top" src="../media/Neil-Armstrong.jpg" alt="Card image" style="width:100%">
+                            <div class="card-img-overlay d-flex justify-content-center align-items-end">
+                                <a href="https://www.biography.com/astronaut/neil-armstrong" class="bio btn btn align-">biography</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="container col-sm-5 col-md-5 col-lg-4 col-xl-3 mb-5">
+                        <div class="card img-fluid" style="width:500px; height:auto">
+                            <img class="card-img-top" src="../media/Buzz-Aldrin.jpg" alt="Card image" style="width:100%">
+                            <div class="card-img-overlay d-flex justify-content-center align-items-end">
+                                <a href="https://www.britannica.com/biography/Buzz-Aldrin" class="bio btn btn align-">biography</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="container col-sm-5 col-md-5 col-lg-4 col-xl-3 mb-5">
+                        <div class="card img-fluid" style="width:500px; height:auto">
+                            <img class="card-img-top" src="../media/Charles Conrad.jpg" alt="Card image" style="width:100%">
+                            <div class="card-img-overlay d-flex justify-content-center align-items-end">
+                                <a href="https://kids.britannica.com/students/article/Charles-Conrad-Jr/310817" class="bio btn btn align-">biography</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="container col-sm-5 col-md-5 col-lg-4 col-xl-3 mb-5">
+                        <div class="card img-fluid" style="width:500px; height:auto">
+                            <img class="card-img-top" src="../media/Alan-Bean.jpg" alt="Card image" style="width:100%">
+                            <div class="card-img-overlay d-flex justify-content-center align-items-end">
+                                <a href="https://www.britannica.com/biography/Alan-Bean" class="bio btn btn align-">biography</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="container col-sm-5 col-md-5 col-lg-4 col-xl-3 mb-5">
+                        <div class="card img-fluid" style="width:500px; height:auto">
+                            <img class="card-img-top" src="../media/Alan Shepard.jpg" alt="Card image" style="width:100%">
+                            <div class="card-img-overlay d-flex justify-content-center align-items-end">
+                                <a href="https://www.biography.com/astronaut/alan-shepard" class="bio btn btn align-">biography</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="container col-sm-5 col-md-5 col-lg-4 col-xl-3 mb-5">
+                        <div class="card img-fluid" style="width:500px; height:auto">
+                            <img class="card-img-top" src="../media/Ed Mitchell.jpg" alt="Card image" style="width:100%">
+                            <div class="card-img-overlay d-flex justify-content-center align-items-end">
+                                <a href="https://www.britannica.com/biography/Edgar-D-Mitchell" class="bio btn btn align-">biography</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="container col-sm-5 col-md-5 col-lg-4 col-xl-3 mb-5">
+                        <div class="card img-fluid" style="width:500px; height:auto">
+                            <img class="card-img-top" src="../media/Dave Scott.jpg" alt="Card image" style="width:100%">
+                            <div class="card-img-overlay d-flex justify-content-center align-items-end">
+                                <a href="https://www.britannica.com/biography/David-Scott" class="bio btn btn align-">biography</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="container col-sm-5 col-md-5 col-lg-4 col-xl-3 mb-5">
+                        <div class="card img-fluid" style="width:500px; height:auto">
+                            <img class="card-img-top" src="../media/Jim Irwin.jpg" alt="Card image" style="width:100%">
+                            <div class="card-img-overlay d-flex justify-content-center align-items-end">
+                                <a href="https://www.britannica.com/biography/James-B-Irwin" class="bio btn btn align-">biography</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="container col-sm-5 col-md-5 col-lg-4 col-xl-3 mb-5">
+                        <div class="card img-fluid" style="width:500px; height:auto">
+                            <img class="card-img-top" src="../media/John W. Young.jpg" alt="Card image" style="width:100%">
+                            <div class="card-img-overlay d-flex justify-content-center align-items-end">
+                                <a href="https://www.britannica.com/biography/John-W-Young" class="bio btn btn align-">biography</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="container col-sm-5 col-md-5 col-lg-4 col-xl-3 mb-5">
+                        <div class="card img-fluid" style="width:500px; height:auto">
+                            <img class="card-img-top" src="../media/Charles Moss Duke Jr.jpg" alt="Card image" style="width:100%">
+                            <div class="card-img-overlay d-flex justify-content-center align-items-end">
+                                <a href="https://kids.britannica.com/students/article/Charles-M-Duke-Jr/321900" class="bio btn btn align-">biography</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="container col-sm-5 col-md-5 col-lg-4 col-xl-3 mb-5">
+                        <div class="card img-fluid" style="width:500px; height:auto">
+                            <img class="card-img-top" src="../media/Eugene Cernan.jpg" alt="Card image" style="width:100%">
+                            <div class="card-img-overlay d-flex justify-content-center align-items-end">
+                                <a href="https://www.britannica.com/biography/Eugene-Andrew-Cernan" class="bio btn btn align-">biography</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="container col-sm-5 col-md-5 col-lg-4 col-xl-3">
+                        <div class="card img-fluid" style="width:500px; height:auto">
+                            <img class="card-img-top" src="../media/Harrison Schmitt.jpg" alt="Card image" style="width:100%">
+                            <div class="card-img-overlay d-flex justify-content-center align-items-end">
+                                <a href="https://www.britannica.com/biography/Harrison-Schmitt" class="bio btn btn align-">biography</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </section>
     </main>
+
     
     <footer class="footerP5">
         <p class="copyright">To MooN™</p>
@@ -128,5 +178,9 @@
         </div>
     </footer>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
 </body>
 </html>

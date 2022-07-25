@@ -6,48 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon"   href="../media/shortcut-icon.jpg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="../style.css">
-    <title>To Moon</title>
+    <title>Bootstrap</title>
 </head>
 
 <body>
     <header class="header">
-        <div class="logo">TO MOON</div>
-        <nav>
-            <div class="menu">
-                <a href="../index.html" id="luna">
-                    <img class="luna" src="../media/menudesplegable.png" alt="luna">
-                </a>
-                <div class="menuDesplegable">
-                    <a class="aM" href="./seccion1.html">
-                        <h2>About Moon</h2>
-                    </a>
-                    <a class="mH" href="./seccion2.html">
-                        <h2>Margaret Hamilton</h2>
-                    </a>
-                    <a class="aP" href="./apollo.html">
-                        <h2>Apollo Program</h2>
-                    </a>
-                    <a class="a" href="./astronauts.html">
-                        <h2>Astronauts</h2>
-                    </a>
-                </div>
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+            <a class="navbar-brand" href="../index.html">To Moon</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/seccion1.html">About Moon</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/seccion2.html">Margaret Hamilton</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/apollo.html">Apollo Program</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/astronauts.html">Astronaut</a>
+                    </li>
+                </ul>
             </div>
         </nav>
     </header>
 <main>
-        <section class="pg2">
+        <section class="pg2 pb-5">
             <div class="containerTituloP2">
-                <h3 class="tituloP2">Titulo sección 1</h3>
-            </div>
-            <div class="containerSeccion1P2">
-                <div class="containerImgSeccion1P2">
-                    <img class="imgSeccion1P2" src="../media/moon23k.jpg" alt="luna">
-                </div>
-                <div>
-                    <p class="cuerpoP2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem amet delectus vitae laboriosam nihil quae et, voluptate sed dolor molestiae officia explicabo veniam porro sequi. Voluptas quam sequi libero quia suscipit cupiditate dicta similique saepe, repudiandae eum ad illum odio asperiores officiis, deleniti quae nihil enim, veniam nam autem. Ipsa sed impedit in, ex fuga expedita eos at neque deleniti sunt eveniet a. Officiis, praesentium autem? Quisquam, inventore quae earum modi officiis debitis dolores omnis, voluptatem praesentium quidem quam soluta est rem harum accusantium officia, totam aspernatur molestias sint explicabo doloribus! Fuga non ea tenetur eius velit eos incidunt magnam optio, assumenda earum. Cumque accusamus assumenda et eius culpa. Obcaecati, omnis architecto eligendi, tenetur consequuntur laudantium hic aliquam harum repudiandae deleniti laborum mollitia similique ullam sequi reprehenderit nesciunt quo vero eius possimus, libero saepe nobis temporibus! Dolores molestias, iste, aut velit perspiciatis odit recusandae unde sunt sequi omnis libero illo.</p>
+                <div class="container mb-5 justify-content-center">
+                    <h3 class="text-center p-3 bg-dark text-white">About to moon</h3>
                 </div>
             </div>
+
+                <div class="container-fluid">
+                    <img class="mb-5 img-fluid mx-auto d-block rounded" src="../media/moon23k.jpg" alt="luna">
+                </div>
+                <div class="container-fluid">
+                    <p class="bg-dark text-white text-justify p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. At qui ea voluptatum. A, dolore error. Ab voluptatum repellat doloremque velit possimus alias iusto illo labore laborum sunt id accusantium numquam delectus illum assumenda facilis voluptatem facere quod, in nobis quia asperiores, veritatis ea? Temporibus debitis architecto totam, quisquam non dolores illum itaque eos distinctio molestias! Fuga earum quo, animi qui dolorem nulla aliquam incidunt optio suscipit voluptatibus! Consequatur excepturi, nihil et eaque doloremque, non asperiores delectus impedit sint repudiandae corrupti iste praesentium optio eius, dolor eos maiores atque odit aliquam minima necessitatibus minus sed assumenda quis! Modi amet obcaecati similique perferendis nesciunt accusantium tenetur ab! Quos aspernatur reiciendis illum. Repudiandae necessitatibus recusandae nam aut velit, voluptas qui consectetur molestias ex. Repellat hic earum, asperiores autem est, sint iste natus non consequatur ab dolores dolorem eligendi ipsum sapiente doloremque? Laudantium maxime fugit quibusdam amet aut sunt perspiciatis officia asperiores labore perferendis.</p>
+                </div>
         </section>
 </main>
     
@@ -67,5 +69,9 @@
         </div>
     </footer>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
 </body>
 </html>

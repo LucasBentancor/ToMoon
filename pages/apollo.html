@@ -6,31 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon"   href="../media/shortcut-icon.jpg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="../style.css">
-    <title>To Moon</title>
+    <title>Bootstrap</title>
 </head>
 <body>
     <header class="header">
-        <div class="logo">TO MOON</div>
-        <nav>
-            <div class="menu">
-                <a href="../index.html" id="luna">
-                    <img class="luna" src="../media/menudesplegable.png" alt="luna">
-                </a>
-                <div class="menuDesplegable">
-                    <a class="aM" href="./seccion1.html">
-                        <h2>About Moon</h2>
-                    </a>
-                    <a class="mH" href="./seccion2.html">
-                        <h2>Margaret Hamilton</h2>
-                    </a>
-                    <a class="aP" href="./apollo.html">
-                        <h2>Apollo Program</h2>
-                    </a>
-                    <a class="a" href="./astronauts.html">
-                        <h2>Astronauts</h2>
-                    </a>
-                </div>
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+            <a class="navbar-brand" href="../index.html">To Moon</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/seccion1.html">About Moon</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/seccion2.html">Margaret Hamilton</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/apollo.html">Apollo Program</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/astronauts.html">Astronaut</a>
+                    </li>
+                </ul>
             </div>
         </nav>
     </header>
@@ -40,26 +41,29 @@
             <section>
                 <div class="cutpage1P4"></div>
             </section>
-            <div class="containerTituloP4">
-                <h3 class="tituloP4">Apollo program</h3>
+            <div class="container-sm justify-content-center">
+                <h3 class="bg-dark text-center p-3 m-5">Apollo program</h3>
             </div>
-            
-            <div class="containerCuerpo1P4">
-                <div class="cuerpo1P4">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptas deserunt repellendus praesentium? Iste voluptatum odit, adipisci deleniti dolores quasi necessitatibus expedita, voluptate molestiae aspernatur praesentium repellat aliquid consequatur esse. Laudantium in earum ut eos quod ad corporis reprehenderit harum fugit nobis, consectetur aperiam dolorem tenetur aspernatur obcaecati deserunt ipsum, itaque, eligendi accusamus dolore quia ea! Eos deleniti officia aut rem dolores repellat unde, necessitatibus commodi magni dignissimos odio nam deserunt voluptatibus? Id quos eveniet repellendus sapiente nihil ullam? Quam, aliquid quo tempore necessitatibus quisquam enim nam perspiciatis doloremque nesciunt dolor officia, iste beatae eos natus. Eum placeat officiis animi?</p>
-                </div>
-                <div class="img1P4">
-                    <img src="../media/Apollo 1.jpg" alt="">
-                </div>
+
+            <article class="container-fluid p-3">
+            <div class="d-flex flex-wrap justify-content-center">
+                <p class="p-3 mb-5 border border-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod recusandae error itaque quis voluptas, odit dolorem tempora iusto doloribus expedita exercitationem blanditiis in distinctio sapiente repudiandae impedit, est, perspiciatis cum quo pariatur autem reprehenderit mollitia voluptates magnam? Sunt, in atque ab perspiciatis temporibus obcaecati autem incidunt alias aspernatur magni rerum praesentium laboriosam labore et eveniet ipsa. Illo, iste. Expedita ratione unde molestiae mollitia quos. Perspiciatis ullam ducimus similique enim fuga laborum ut exercitationem hic soluta, consectetur dolorum placeat quam tempore officiis at unde non cum debitis alias? Inventore adipisci architecto debitis quisquam voluptatem, voluptatum reprehenderit totam? Perspiciatis tempora esse sint possimus minus reprehenderit rerum. Fuga corrupti facilis eligendi tempore sapiente, velit, ea harum ipsa cum impedit consequuntur accusantium atque similique.</p>
+                <img class="img-fluid mb-5 rounded border border-warning" src="../media/Apollo 1.jpg">
             </div>
-            <div class="containerCuerpo2P4">
-                <div class="cuerpo2P4">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quasi, voluptate pariatur ea accusamus accusantium nesciunt excepturi dolorem cupiditate, itaque, cum odio natus quo? Delectus mollitia earum eos iusto fuga nobis voluptatum, debitis voluptatibus voluptate nostrum officiis atque aliquid quo natus quis amet quos dignissimos laborum! Explicabo tempore magnam sit consequuntur assumenda eum harum atque ducimus, modi excepturi cumque aliquid veniam temporibus minus sapiente tempora maxime asperiores ipsam cum quae quibusdam id libero! Modi dignissimos quis inventore error repellat alias quidem neque accusantium ullam quaerat! Eos qui quod aliquam amet dignissimos et iste exercitationem dolor expedita ut, a, consequatur quaerat!</p>
+            </article>
+
+            <article class="container-fluid p-3 mb-5">
+                <div class="d-flex flex-wrap justify-content-center">
+                    <p class="p-3 mb-5 border border-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod recusandae error itaque quis voluptas, odit dolorem tempora iusto doloribus expedita exercitationem blanditiis in distinctio sapiente repudiandae impedit, est, perspiciatis cum quo pariatur autem reprehenderit mollitia voluptates magnam? Sunt, in atque ab perspiciatis temporibus obcaecati autem incidunt alias aspernatur magni rerum praesentium laboriosam labore et eveniet ipsa. Illo, iste. Expedita ratione unde molestiae mollitia quos. Perspiciatis ullam ducimus similique enim fuga laborum ut exercitationem hic soluta, consectetur dolorum placeat quam tempore officiis at unde non cum debitis alias? Inventore adipisci architecto debitis quisquam voluptatem, voluptatum reprehenderit totam? Perspiciatis tempora esse sint possimus minus reprehenderit rerum. Fuga corrupti facilis eligendi tempore sapiente, velit, ea harum ipsa cum impedit consequuntur accusantium atque similique.</p>
+                    <img class="img-fluid rounded border border-warning" src="../media/Apollo2.jpg">
                 </div>
-                <div class="img2P4">
-                    <img src="../media/Apollo2.jpg" alt="">
+                </article>
+
+                <div class="d-flex flex-row justify-content-center alig-items-center">
+                <button type="button" class="btn btn-info mb-5">
+                    <a class="text-decoration-none text-white" href="https://www.nasa.gov/mission_pages/apollo/missions/index.html">More Information</a>
+                </button>
                 </div>
-            </div>
 
             <section class="postionCutPage2P4">
                 <div class="cutpage2P4"></div>
@@ -82,5 +86,8 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
 </body>
 </html>
