@@ -228,7 +228,7 @@ header .logo{
     height: min-content;
     padding-bottom: 60px;
     width: 100%;
-    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(44, 44, 44), rgb(0, 0, 0));
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(46, 33, 3), rgb(0, 0, 0));
 }
 
 /* Titulo de secciones */
@@ -278,9 +278,11 @@ header .logo{
     align-items: center;
     flex-direction: column;
     filter: brightness(0.9);
+    transition: 0.25s;
 }
 .bgCarta:hover{
     filter: brightness(1);
+    transform: rotate3d(1,1,0,13deg) ;
 }
 
 .tituloCarta{
@@ -299,7 +301,7 @@ header .logo{
 
 .showMore{
     color: rgb(222, 222, 222);
-    background-color: #422402;
+    background-color: #351d01;
     border: 2px solid black;
     text-align: center;
     padding: 4px 4px 4px 4px;
@@ -327,13 +329,14 @@ header .logo{
 
 /* Parte 3 */
 .containerConcept{
+    background-color: rgba(0, 0, 0, 0.404);
     height: auto;
     width: 100%;
-    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(44, 44, 44), rgb(0, 0, 0));
     color: rgb(222, 222, 222);
     display: flex;
     justify-content: space-around;
     flex-direction: column;
+    padding: 100px 0px 100px 0px;
 }
 
 .tituloLeft{
@@ -363,7 +366,7 @@ header .logo{
 /* footer */
 footer{
     color: rgb(222, 222, 222);
-    background-color:rgba(0, 0, 0, 0.956);
+    background-color:rgba(2, 2, 2, 0.956);
     height: min-content;
     width: 100%;
     padding-top: 10px;
