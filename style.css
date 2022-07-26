@@ -85,6 +85,8 @@ header .logo{
     filter:brightness(1.1)
 }
 
+/* Menu desplegable */
+
 .menuDesplegable{
     display: none;
     position: absolute;
@@ -94,7 +96,8 @@ header .logo{
     padding: 10px 10px 15px 10px;
     margin-top: 5px;
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.823);
-
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 .menu:hover > .menuDesplegable {
     display: block;
@@ -120,11 +123,11 @@ header .logo{
     }
 }
 
-.aM{
+.menuDesplegableCuerpo{
     text-decoration: none;
     color: rgb(222, 222, 222);
 }
-.aM h2{
+.menuDesplegableCuerpo h2{
     font-size: 26px;
     border-radius: 10px;
     text-align: center;
@@ -135,80 +138,11 @@ header .logo{
     transition: 0.3s;
     text-shadow: 2px 5px 10px rgb(0, 0, 0);
 }
-.aM h2:hover{
+.menuDesplegableCuerpo h2:hover{
     transform: scale(1.04);
     filter: brightness(1);
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.678);
 }
-
-.mH{
-    text-decoration: none;
-    color: rgb(222, 222, 222);
-}
-.mH h2{
-    font-size: 26px; 
-    border: 0px solid transparent;
-    border-radius: 10px;
-    text-align: center;
-    margin-bottom: 15px;
-    padding: 0px 10px 0px 10px;
-    background-color: rgba(255, 255, 255, 0.192);
-    box-shadow: 0px 0px 5px white;
-    filter: brightness(0.9);
-    transition: 0.3s;
-    text-shadow: 2px 5px 10px rgb(0, 0, 0);
-}
-.mH h2:hover{
-    transform: scale(1.04);
-    filter: brightness(1);
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.678);
-}
-
-
-.aP{
-    text-decoration: none;
-    color: rgb(222, 222, 222);
-}
-.aP h2{
-    font-size: 26px;
-    border: 0px solid transparent;
-    border-radius: 10px;
-    text-align: center;
-    margin-bottom: 15px;
-    background-color: rgba(255, 255, 255, 0.192);
-    box-shadow: 0px 0px 5px white;
-    filter: brightness(0.9);
-    transition: 0.3s;
-    text-shadow: 2px 5px 10px rgb(0, 0, 0);
-}
-.aP h2:hover{
-    transform: scale(1.04);
-    filter: brightness(1);
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.678);
-}
-
-
-.a{
-    text-decoration: none;
-    color: rgb(222, 222, 222);
-}
-.a h2{
-    font-size: 26px;
-    border: 0px solid transparent;
-    border-radius: 10px;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.192);
-    box-shadow: 0px 0px 5px white;
-    filter: brightness(0.9);
-    transition: 0.3s;
-    text-shadow: 2px 5px 10px rgb(0, 0, 0);
-}
-.a h2:hover{
-    transform: scale(1.04);
-    filter: brightness(1);
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.678);
-}
-
 
 
 
@@ -304,7 +238,7 @@ header .logo{
     justify-content: center;
 }
 
-.tituloSecciones{
+.tituloCenter{
     color: rgb(222, 222, 222);
     background-color: rgba(226, 226, 226, 0.178);
     text-align: center;
@@ -318,6 +252,9 @@ header .logo{
     box-shadow: 0px 6px 10px rgb(204, 204, 204);
 }
 
+
+/* Seccion Carta | About Moon | Margaret H. | Apollo P. | Astronauts*/
+
 .ContainerCarta{
     display: flex;
     flex-wrap: wrap;
@@ -326,9 +263,7 @@ header .logo{
     margin-bottom: 100px;
 }
 
-/* About Moon*/
-
-.bgSeccion1{
+.bgCarta{
     height: 500px;
     width: 400px;
     background-color: rgba(255, 255, 255, 0.303);
@@ -344,22 +279,25 @@ header .logo{
     flex-direction: column;
     filter: brightness(0.9);
 }
-.bgSeccion1:hover{
+.bgCarta:hover{
     filter: brightness(1);
 }
 
-.tituloSeccion1{
+.tituloCarta{
     color: rgb(222, 222, 222);
 }
 
-.cuerpoSeccion1{
+.cuerpoCarta{
     font-size: 20px;
     color: rgb(222, 222, 222);
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-#seccion1{
+
+/* Boton "Show more" About Moon | Margaret H. | Apollo P. | Astronauts */
+
+.showMore{
     color: rgb(222, 222, 222);
     background-color: #380138;
     border: 2px solid black;
@@ -370,164 +308,16 @@ header .logo{
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 2px;
     text-decoration: none;
-    box-shadow: 2px 2px 6px black;
+    box-shadow: 1px 1px 4px black;
 
 }
-#seccion1:hover{
+.showMore:hover{
     filter: brightness(1.4);
-}
-
-/* Seccion 2 */
-
-.bgSeccion2{
-    height: 500px;
-    width: 400px;
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.411);
-    background-color: rgba(255, 255, 255, 0.303);
-    padding: 20px 20px 20px 20px;
-    margin: 20px 20px 20px 20px;
-    box-shadow: -10px 20px 20px black;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction:column ;
-    filter: brightness(0.9);
-}
-.bgSeccion2:hover{
-    filter: brightness(1);
-}
-
-.tituloSeccion2{
-    color: rgb(222, 222, 222);
-}
-
-.cuerpoSeccion2{
-    font-size: 20px;
-    color: rgb(222, 222, 222);
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-#seccion2{
-    color: rgb(222, 222, 222);
-    background-color: #380138;
-    border: 2px solid black;
-    text-align: center;
-    padding: 4px 4px 4px 4px;
-    border-top-left-radius: 2px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 2px;
-    text-decoration: none;
+    transform: scale(1.01);
     box-shadow: 2px 2px 6px black;
 }
-#seccion2:hover{
-    filter: brightness(1.4);
-}
 
-/* Apollo Program */
-
-.bgApollo{
-    height: 500px;
-    width: 400px;
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.411);
-    background-color: rgba(255, 255, 255, 0.303);
-    padding: 20px 20px 20px 20px;
-    margin: 20px 20px 20px 20px;
-    box-shadow: 5px 20px 20px black;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    filter: brightness(0.9);
-}
-.bgApollo:hover{
-    filter: brightness(1);
-}
-
-.tituloApollo{
-    color: rgb(222, 222, 222);
-}
-
-.cuerpoApollo{
-    font-size: 20px;
-    color: rgb(222, 222, 222);
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-#apollo{
-    color: rgb(222, 222, 222);
-    background-color: #380138;
-    border: 2px solid black;
-    text-align: center;
-    padding: 4px 4px 4px 4px;
-    border-top-left-radius: 2px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 2px;
-    text-decoration: none;
-    box-shadow: 2px 2px 6px black;
-}
-#apollo:hover{
-    filter: brightness(1.4);
-}
-
-
-/* Astronauts */
-
-.bgAstronauts{
-    height: 500px;
-    width: 400px;
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.411);
-    background-color: rgba(255, 255, 255, 0.303);
-    padding: 20px 20px 20px 20px;
-    margin: 20px 20px 20px 20px;
-    box-shadow: 10px 15px 20px black;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    filter: brightness(0.9);
-}
-.bgAstronauts:hover{
-    filter: brightness(1);
-}
-
-.tituloAstronauts{
-    color: rgb(222, 222, 222);
-}
-
-.cuerpoaAstronauts{
-    font-size: 20px;
-    color: rgb(222, 222, 222);
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-#astronauts{
-    color: rgb(222, 222, 222);
-    background-color: #380138;
-    border: 2px solid black;
-    text-align: center;
-    padding: 4px 4px 4px 4px;
-    border-top-left-radius: 2px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 2px;
-    text-decoration: none;
-    box-shadow: 2px 2px 6px black;
-}
-#astronauts:hover{
-    filter: brightness(1.4);
-}
-
+/* Cut page 2 */
 .cutPage2{   
     height: 120px;
     width: 100%;
@@ -546,7 +336,7 @@ header .logo{
     flex-direction: column;
 }
 
-.tituloConcept{
+.tituloLeft{
     width: max-content;
     color: rgb(222, 222, 222);
     background-color: rgba(226, 226, 226, 0.178);
@@ -614,33 +404,19 @@ footer{
 }
 
 
-/* page 2 "Seccion 1" */
+/* page 2 "About Moon" */
 .pg2{
     background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(1, 18, 29, 0.904), rgb(0, 0, 0));
     width: 100%;
     height: min-content;
-    margin: -95px 0px 0px 0px;
 }
 
 .containerTituloP2{
-    padding: 170px 10px 0px 10px;
+    padding: 20px 10px 0px 10px;
     display: flex;
     justify-content: center;
 }
 
-.tituloP2{
-    color: rgb(222, 222, 222);
-    background-color: rgba(226, 226, 226, 0.178);
-    text-align: center;
-    margin: 100px 20px 100px 20px;
-    padding: 10px 20px 20px 20px;
-    border: 1px solid rgba(241, 241, 241, 0.767);
-    border-top-left-radius: 4px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 4px;
-    box-shadow: 0px 6px 10px rgb(204, 204, 204);
-}
 
 .containerSeccion1P2{
     display: flex;
@@ -656,8 +432,9 @@ footer{
     border-radius: 4px;
     box-shadow: -10px 20px 20px black;
     filter: brightness(1.3);
-    margin-bottom: 20px;    
+    margin-bottom: 20px;
 }
+
 .cuerpoP2{
     color: rgb(222, 222, 222);
     background-color: rgba(255, 255, 255, 0.128);
@@ -680,47 +457,21 @@ footer{
     border: 1px solid rgba(0, 0, 0, 0.568)
 }
 
-/* page 3 "seccion 2" */
 
-
+/* page 3 "Margaret Hamilton" */
 
 .pg3{
-    background-image: linear-gradient(to bottom, rgba(8, 8, 8, 0.966), rgba(1, 2, 48, 0.918),  rgba(8, 8, 8, 0.966));
+    background-image: linear-gradient(to bottom, rgb(8, 8, 8), rgba(0, 21, 61, 0.918),  rgb(8, 8, 8));
     width: 100%;
-    height: min-content;
-    margin: -95px 0px 0px 0px;
-}
-
-.containerCutPage1P3{
-    padding: 195px 0px 0px 0px;
-}
-
-.cutPage1P3{
-    height: 50px;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.956);
-    box-shadow: 2px 2px 4px rgba(243, 243, 243, 0.34);
+    height: 100%;
 }
 
 .containerTituloP3{
-    padding: 100px 10px 100px 10px;
+    padding: 50px 10px 0px 10px;
     display: flex;
     justify-content: center;
 }
 
-.tituloP3{
-    color: rgb(222, 222, 222);
-    background-color: rgba(226, 226, 226, 0.178);
-    text-align: center;
-    margin: 100px 20px 100px 20px;
-    padding: 10px 20px 20px 20px;
-    border: 1px solid rgba(241, 241, 241, 0.767);
-    border-top-left-radius: 4px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 4px;
-    box-shadow: 0px 6px 10px rgb(204, 204, 204);
-}
 
 .containerMargaretP3{
     width: 100%;
@@ -768,19 +519,7 @@ footer{
 
 .containerSubTituloMargaret{
     color: rgb(222, 222, 222);
-    margin: 80px 0px 100px 20px;
-}
-
-.containerCuerpoMargaret2{
-    display: flex;
-    justify-content: center;
-}
-
-.containerCuerpoMargaret2 p{
-    color: rgb(222, 222, 222);
-    height: min-content;
-    width: 100%;
-    margin: 0px 40px 100px 40px;
+    margin: 40px 0px 100px 20px;
 }
 
 .gridContainerMargaret{
@@ -790,6 +529,7 @@ footer{
     justify-content: center;
     grid-template-columns: repeat(3, 300px);
     grid-template-rows: 300px 300px;
+    margin-top: 100px;
     padding-bottom: 100px;
     grid-gap: 25px
 }
@@ -852,54 +592,23 @@ footer{
 }
 
 
+/* Page 4 "Apollo Program" */
 
-.containerCutPage2P3{
+.pg4{
+    background-image: linear-gradient(to bottom, rgba(8, 8, 8, 0.966),rgb(59, 33, 2),  rgba(8, 8, 8, 0.966));
+    padding-top: 80px;
+    height: 100%;
+    color: rgb(222, 222, 222);
     padding-bottom: 100px;
 }
 
-.cutPage2P3{
-    height: 50px;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.956);
-    box-shadow: 2px 2px 4px rgba(243, 243, 243, 0.34);
-}
-
-/* Page 4 "Apollo Program" */
-.pg4{
-    background-image: linear-gradient(to bottom, rgba(8, 8, 8, 0.966), rgb(44, 25, 1),  rgba(8, 8, 8, 0.966));
-    padding-top: 105px;
-    height: min-content;
-    color: rgb(222, 222, 222);
-}
-
-.cutpage1P4{
-    height: 50px;
-    width: 100%;
-    background-color: rgba(153, 151, 151, 0.699);
-    box-shadow: 2px 2px 4px rgba(243, 243, 243, 0.705);
-}
-
 .containerTituloP4{
-    padding: 0px 10px 0px 10px;
+    padding: 0px 20px 0px 0px;
     display: flex;
     justify-content: center;
 }
 
-.tituloP4{
-    color: rgb(222, 222, 222);
-    background-color: rgba(226, 226, 226, 0.178);
-    text-align: center;
-    margin: 100px 20px 0px 20px;
-    padding: 10px 20px 20px 20px;
-    border: 1px solid rgba(241, 241, 241, 0.767);
-    border-top-left-radius: 4px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 4px;
-    box-shadow: 0px 6px 10px rgb(204, 204, 204);
-}
-
-.containerCuerpo1P4{
+.containerCuerpoP4{
     padding: 50px 20px 20px 20px;
     display: flex;
     flex-wrap: wrap-reverse;
@@ -908,7 +617,7 @@ footer{
     align-items: center;
 }
 
-.cuerpo1P4{
+.cuerpoP4{
     margin-top: 50px;
     background-color: rgba(16, 16, 16, 0.374);
     padding: 5px 20px 5px 20px;
@@ -920,83 +629,34 @@ footer{
     box-shadow: -4px 6px 10px rgba(243, 243, 243, 0.34);
 }
 
-.cuerpo2P4{
-    margin-top: 50px;
-    background-color: rgba(16, 16, 16, 0.374);
-    padding: 5px 20px 5px 20px;
-    height: min-content;
-    width: 600px;
-    text-align: justify;
-    border: 1px solid black;
-    border-radius: 8px;
-    box-shadow: -4px 4px 10px rgba(243, 243, 243, 0.34);
-}
-.containerCuerpo2P4{
-    padding: 50px 20px 100px 20px;
-    display: flex;
-    flex-wrap: wrap-reverse;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.img1P4{
+.imgP4{
     border-top: 1px solid black;
     border-left: 1px solid black;
     border-right: 1px solid black;
-    border-radius: 10px;
     margin: 20px 20px 20px 20px;
     filter: brightness(0.9);
 }
 
-.img2P4{
-    border-top: 1px solid black;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    border-radius: 10px;
-    margin: 20px 20px 20px 20px;
-    filter: brightness(0.8);
-}
-
-.cutpage2P4{
-    height: 50px;
-    width: 100%;
-    background-color: rgba(153, 151, 151, 0.699);
-    box-shadow: 2px 2px 4px rgba(243, 243, 243, 0.705);
-}
-.postionCutPage2P4{
-    padding-bottom: 100px;
-}
 
 /* page 5 "Astronauts*/
 .pg5{
-    background-image: url(./media/fondo\ universo\ nasa\ II.jpg);
     background-image: linear-gradient(to bottom, rgb(5, 5, 5), rgba(1, 26, 7, 0.952), rgb(5, 5, 5));
-    margin-top: -95px;
     color: rgb(222, 222, 222);
-    padding-top: 80px;
-    height: auto;
-}
-
-.containerAstronauts{
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    text-align: left;
-    padding: 0px 20px 0px 20px;
+    height: 100%;
+    margin-top: -150px;
 }
 
 .containerTituloP5{
-    margin-top: 150px;
-    margin-bottom: 100px;
+    padding: 300px 20px 0px 20px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
 }
 .containerTituloP5 h3{
     color: rgb(222, 222, 222);
     background-color: rgba(226, 226, 226, 0.178);
     width: max-content;
     text-align: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
     padding: 10px 20px 20px 20px;
     border: 1px solid rgba(241, 241, 241, 0.767);
     border-top-left-radius: 4px;
@@ -1016,15 +676,15 @@ footer{
     height: auto;
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(4, 200px);
-    grid-template-rows: 300px 300px 300px 300px;
+    grid-template-columns: repeat(4, 250px);
+    grid-template-rows: 300px 300px 300px;
     padding: 10px;
-    padding-bottom: 110px;
-    grid-gap: 25px
+    padding-bottom: 100px;
+    grid-gap: 30px
 }
 
 .grid{
-    border: 2px solid black;
+    border: 2px solid rgba(0, 0, 0, 0.884);
     border-radius: 12px;
     filter: brightness(0.7);
     transition: 0.3s;
@@ -1057,100 +717,92 @@ footer{
 }
 .bio:hover{
     filter: brightness(1.1);
-    box-shadow: 4px 4px 10px rgb(19, 19, 19);
+    transform: scale(1.01);
 }
 
-
-.grid1{
-    grid-column: 1/2 ;
-    grid-row: 1/5;
-    background-image: url(./media/spacecraft.jpg);
-    background-position: center center;
-    background-size: cover;
-}
 
 .grid2{
-    grid-column: 2/3;
+    grid-column: 1/2;
     grid-row: 1/2;
     background-image: url(./media/Neil-Armstrong.jpg);
-    background-position: center center;
+    background-position: center top;
     background-size: cover;
 }
 .grid3{
-    grid-column: 3/4;
+    grid-column: 2/3;
     grid-row: 1/2;
     background-image: url(./media/Buzz-Aldrin.jpg);
-    background-position: center center;
+    background-position: center top;
     background-size: cover;
 }
 .grid4{
-    grid-column: 4/5;
+    grid-column: 3/4;
     grid-row: 1/2;
     background-image: url(./media/Charles\ Conrad.jpg);
     background-position: center center;
     background-size: cover;
 }
 .grid5{
-    grid-column: 2/3;
-    grid-row: 2/3;
+    grid-column: 4/5;
+    grid-row: 1/2;
     background-image: url(./media/Alan-Bean.jpg);
-    background-position: center center;
+    background-position: center top;
     background-size: cover;
 }
 .grid6{
-    grid-column: 3/4;
+    grid-column: 1/2;
     grid-row: 2/3;
     background-image: url(./media/Alan\ Shepard.jpg);
-    background-position: center center;
+    background-position: center top;
     background-size: cover;
 }
 .grid7{
-    grid-column: 4/5;
+    grid-column: 2/3;
     grid-row: 2/3;
     background-image: url(./media/Ed\ Mitchell.jpg);
-    background-position: center center;
+    background-position: center top;
     background-size: cover;
 }
 .grid8{
-    grid-column: 2/3;
-    grid-row: 3/4;
+    grid-column: 3/4;
+    grid-row: 2/3;
     background-image: url(./media/Dave\ Scott.jpg);
-    background-position: center center;
+    background-position: center top;
     background-size: cover;
 }
 .grid9{
-    grid-column: 3/4;
-    grid-row: 3/4;
+    grid-column: 4/5;
+    grid-row: 2/3;
     background-image: url(./media/Jim\ Irwin.jpg);
-    background-position: center center;
+    background-position: center top;
     background-size: cover;
 }
 .grid10{
-    grid-column: 4/5;
+    grid-column: 1/2;
     grid-row: 3/4;
     background-image: url(./media/John\ W.\ Young.jpg);
-    background-position: center center;
+    background-position: center top;
     background-size: cover;
 }
 .grid11{
     grid-column: 2/3;
-    grid-row: 4/5;
+    grid-row: 3/4;
     background-image: url(./media/Charles\ Moss\ Duke\ Jr.jpg);
     background-position: center center;
     background-size: cover;
 }
 .grid12{
     grid-column: 3/4;
-    grid-row: 4/5;
+    grid-row: 3/4;
     background-image: url(./media/Eugene\ Cernan.jpg);
-    background-position: center center;
+    background-position: center top;
     background-size: cover;
 }
 .grid13{
     grid-column: 4/5;
-    grid-row: 4/5;
+    grid-row: 3/4;
     background-image: url(./media/Harrison\ Schmitt.jpg);
-    background-position: center center;
+    background-position: center top;
     background-size: cover;
 }
 
@@ -1272,7 +924,7 @@ footer{
 }
 
 /* Astronauts */
-@media (max-width: 906px){
+@media (max-width: 1118px){
     .grid1{
         display: none;
     }
@@ -1287,86 +939,62 @@ footer{
         grid-column: 1/2;
         grid-row: 1/2;
         background-image: url(./media/Neil-Armstrong.jpg);
-        background-position: center center;
-        background-size: cover;
-    }
+}
     .grid3{
         grid-column: 2/3;
         grid-row: 1/2;
         background-image: url(./media/Buzz-Aldrin.jpg);
-        background-position: center center;
-        background-size: cover;
-    }
+}
     .grid4{
         grid-column: 3/4;
         grid-row: 1/2;
         background-image: url(./media/Charles\ Conrad.jpg);
-        background-position: center center;
-        background-size: cover;
-    }
+}
     .grid5{
         grid-column: 1/2;
         grid-row: 2/3;
         background-image: url(./media/Alan-Bean.jpg);
-        background-position: center center;
-        background-size: cover;
-    }
+}
     .grid6{
         grid-column: 2/3;
         grid-row: 2/3;
         background-image: url(./media/Alan\ Shepard.jpg);
-        background-position: center center;
-        background-size: cover;
-    }
+}
     .grid7{
         grid-column: 3/4;
         grid-row: 2/3;
         background-image: url(./media/Ed\ Mitchell.jpg);
-        background-position: center center;
-        background-size: cover;
-    }
+}
     .grid8{
         grid-column: 1/2;
         grid-row: 3/4;
         background-image: url(./media/Dave\ Scott.jpg);
-        background-position: center center;
-        background-size: cover;
-    }
+}
     .grid9{
         grid-column: 2/3;
         grid-row: 3/4;
         background-image: url(./media/Jim\ Irwin.jpg);
-        background-position: center center;
-        background-size: cover;
-    }
+}
     .grid10{
         grid-column: 3/4;
         grid-row: 3/4;
         background-image: url(./media/John\ W.\ Young.jpg);
-        background-position: center center;
-        background-size: cover;
-    }
+}
     .grid11{
         grid-column: 1/2;
         grid-row: 4/5;
         background-image: url(./media/Charles\ Moss\ Duke\ Jr.jpg);
-        background-position: center center;
-        background-size: cover;
-    }
+}
     .grid12{
         grid-column: 2/3;
         grid-row: 4/5;
         background-image: url(./media/Eugene\ Cernan.jpg);
-        background-position: center center;
-        background-size: cover;
-    }
+}
     .grid13{
         grid-column: 3/4;
         grid-row: 4/5;
         background-image: url(./media/Harrison\ Schmitt.jpg);
-        background-position: center center;
-        background-size: cover;
-    }
+}
 }
 
 @media (max-width: 679px){
@@ -1374,9 +1002,9 @@ footer{
         display: none;
     }
     .containerGrid{
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 200px 200px 200px 200px;
-        padding: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 250px 250px 250px 250px 250px 250px;
+        padding: 20px;
         padding-bottom: 90px;
         grid-gap: 20px
     }
@@ -1384,86 +1012,62 @@ footer{
         grid-column: 1/2;
         grid-row: 1/2;
         background-image: url(./media/Neil-Armstrong.jpg);
-        background-position: center center;
-        background-size: cover;
-    }
+}
     .grid3{
         grid-column: 2/3;
         grid-row: 1/2;
         background-image: url(./media/Buzz-Aldrin.jpg);
-        background-position: center center;
-        background-size: cover;
-    }
+}
     .grid4{
-        grid-column: 3/4;
-        grid-row: 1/2;
-        background-image: url(./media/Charles\ Conrad.jpg);
-        background-position: center center;
-        background-size: cover;
-    }
-    .grid5{
         grid-column: 1/2;
+        grid-row: 2/3;
+        background-image: url(./media/Charles\ Conrad.jpg);
+}
+    .grid5{
+        grid-column: 2/3;
         grid-row: 2/3;
         background-image: url(./media/Alan-Bean.jpg);
-        background-position: center center;
-        background-size: cover;
-    }
+}
     .grid6{
-        grid-column: 2/3;
-        grid-row: 2/3;
+        grid-column: 1/2;
+        grid-row: 3/4;
         background-image: url(./media/Alan\ Shepard.jpg);
-        background-position: center center;
-        background-size: cover;
-    }
+}
     .grid7{
-        grid-column: 3/4;
-        grid-row: 2/3;
+        grid-column: 2/3;
+        grid-row: 3/4;
         background-image: url(./media/Ed\ Mitchell.jpg);
-        background-position: center center;
-        background-size: cover;
-    }
+}
     .grid8{
         grid-column: 1/2;
-        grid-row: 3/4;
+        grid-row: 4/5;
         background-image: url(./media/Dave\ Scott.jpg);
-        background-position: center center;
-        background-size: cover;
-    }
+}
     .grid9{
         grid-column: 2/3;
-        grid-row: 3/4;
+        grid-row: 4/5;
         background-image: url(./media/Jim\ Irwin.jpg);
-        background-position: center center;
-        background-size: cover;
-    }
+}
     .grid10{
-        grid-column: 3/4;
-        grid-row: 3/4;
-        background-image: url(./media/John\ W.\ Young.jpg);
-        background-position: center center;
-        background-size: cover;
-    }
-    .grid11{
         grid-column: 1/2;
-        grid-row: 4/5;
-        background-image: url(./media/Charles\ Moss\ Duke\ Jr.jpg);
-        background-position: center center;
-        background-size: cover;
-    }
-    .grid12{
+        grid-row: 5/6;
+        background-image: url(./media/John\ W.\ Young.jpg);
+}
+    .grid11{
         grid-column: 2/3;
-        grid-row: 4/5;
+        grid-row: 5/6;
+        background-image: url(./media/Charles\ Moss\ Duke\ Jr.jpg);
+}
+    .grid12{
+        grid-column: 1/2;
+        grid-row: 6/7;
         background-image: url(./media/Eugene\ Cernan.jpg);
-        background-position: center center;
-        background-size: cover;
-    }
+}
     .grid13{
-        grid-column: 3/4;
-        grid-row: 4/5;
+        grid-column: 2/3;
+        grid-row: 6/7;
         background-image: url(./media/Harrison\ Schmitt.jpg);
-        background-position: center center;
-        background-size: cover;
-    }
+}
 }
 
 @media (max-width: 975px){
