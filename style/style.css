@@ -5,6 +5,15 @@
   scroll-behavior: smooth;
   color: rgb(222, 222, 222);
 }
+* ::-webkit-scrollbar {
+  width: 8px;
+  background-color: rgb(12, 12, 12);
+}
+* ::-webkit-scrollbar-thumb {
+  background-color: rgba(172, 172, 172, 0.84);
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.568);
+}
 
 @font-face {
   font-family: azonix;
@@ -174,8 +183,9 @@ main .cartas .ContainerCarta div h4 {
   line-height: 31.2px;
 }
 main .cartas .ContainerCarta div p {
-  font-size: 20px;
   font-family: typori;
+  font-size: 20px;
+  line-height: 24px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -234,6 +244,7 @@ main .containerConcept h4 {
 main .containerConcept p {
   font-family: typori;
   font-size: 22px;
+  line-height: 26.4px;
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
@@ -421,9 +432,12 @@ header nav .menu .menuDesplegable a h2 {
   justify-content: space-around;
   padding: 0px 20px 100px 20px;
 }
-.containerSeccion1AM img {
-  height: 317px;
-  width: 600px;
+.containerSeccion1AM .containerImgAM {
+  padding: 0px 10px 0px 10px;
+}
+.containerSeccion1AM .containerImgAM img {
+  height: auto;
+  width: 100%;
   border: 3px solid black;
   border-radius: 4px;
   box-shadow: -10px 20px 20px black;
@@ -433,6 +447,7 @@ header nav .menu .menuDesplegable a h2 {
 .containerSeccion1AM p {
   font-family: typori;
   font-size: 22px;
+  line-height: 26.4px;
   background-color: rgba(255, 255, 255, 0.128);
   height: 600px;
   width: 600px;
@@ -476,6 +491,7 @@ header nav .menu .menuDesplegable a h2 {
 .containerCuerpoVideo p {
   font-family: typori;
   font-size: 22px;
+  line-height: 26.4px;
   background-color: rgba(255, 255, 255, 0.062);
   height: auto;
   width: 100%;
@@ -532,6 +548,7 @@ header nav .menu .menuDesplegable a h2 {
 .containerCuerpoMargaret p {
   font-family: typori;
   font-size: 22px;
+  line-height: 26.4px;
   margin: 0px 40px 100px 40px;
 }
 
@@ -632,6 +649,18 @@ header nav .menu .menuDesplegable a h2 {
   transition: 0.3s;
 }
 
+@media (max-width: 975px) {
+  .gridContainerMargaret {
+    width: 100%;
+    height: auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 300px 300px;
+    padding: 0px 10px 100px 10px;
+    grid-gap: 20px;
+  }
+}
 .fondoAP {
   background-image: linear-gradient(to bottom, rgba(8, 8, 8, 0.966), rgb(48, 5, 5), rgba(8, 8, 8, 0.966));
   width: 100%;
@@ -671,6 +700,7 @@ header nav .menu .menuDesplegable a h2 {
 .containerCuerpoPA p {
   font-family: typori;
   font-size: 22px;
+  line-height: 26.4px;
   margin-top: 50px;
   background-color: rgba(16, 16, 16, 0.374);
   padding: 5px 20px 5px 20px;
@@ -756,6 +786,7 @@ header nav .menu .menuDesplegable a h2 {
 .containerCuerpoAS p {
   font-family: typori;
   font-size: 22px;
+  line-height: 26.4px;
   margin: 0px 20px 100px 20px;
 }
 
@@ -890,4 +921,197 @@ header nav .menu .menuDesplegable a h2 {
   background-image: url(../media/Harrison\ Schmitt.jpg);
   background-position: center top;
   background-size: cover;
+}
+
+@media (max-width: 1131px) {
+  .containerGrid {
+    width: 100%;
+    height: auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 250px);
+    grid-template-rows: 300px 300px 300px 300px;
+    padding-bottom: 100px;
+    grid-gap: 30px;
+  }
+  .containerGrid .grid1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-image: url(../media/Neil-Armstrong.jpg);
+    background-position: center top;
+    background-size: cover;
+  }
+  .containerGrid .grid2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-image: url(../media/Buzz-Aldrin.jpg);
+    background-position: center top;
+    background-size: cover;
+  }
+  .containerGrid .grid3 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background-image: url(../media/Charles\ Conrad.jpg);
+    background-position: center center;
+    background-size: cover;
+  }
+  .containerGrid .grid4 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-image: url(../media/Alan-Bean.jpg);
+    background-position: center top;
+    background-size: cover;
+  }
+  .containerGrid .grid5 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-image: url(../media/Alan\ Shepard.jpg);
+    background-position: center top;
+    background-size: cover;
+  }
+  .containerGrid .grid6 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    background-image: url(../media/Ed\ Mitchell.jpg);
+    background-position: center top;
+    background-size: cover;
+  }
+  .containerGrid .grid7 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    background-image: url(../media/Dave\ Scott.jpg);
+    background-position: center top;
+    background-size: cover;
+  }
+  .containerGrid .grid8 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    background-image: url(../media/Jim\ Irwin.jpg);
+    background-position: center top;
+    background-size: cover;
+  }
+  .containerGrid .grid9 {
+    grid-column: 3/4;
+    grid-row: 3/4;
+    background-image: url(../media/John\ W.\ Young.jpg);
+    background-position: center top;
+    background-size: cover;
+  }
+  .containerGrid .grid10 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    background-image: url(../media/Charles\ Moss\ Duke\ Jr.jpg);
+    background-position: center center;
+    background-size: cover;
+  }
+  .containerGrid .grid11 {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    background-image: url(../media/Eugene\ Cernan.jpg);
+    background-position: center top;
+    background-size: cover;
+  }
+  .containerGrid .grid12 {
+    grid-column: 3/4;
+    grid-row: 4/5;
+    background-image: url(../media/Harrison\ Schmitt.jpg);
+    background-position: center top;
+    background-size: cover;
+  }
+}
+@media (max-width: 850px) {
+  .containerGrid {
+    width: 100%;
+    height: auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 205px);
+    grid-template-rows: 255 255 255 255 255 255;
+    padding-bottom: 100px;
+    grid-gap: 20px;
+  }
+  .containerGrid .grid1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-image: url(../media/Neil-Armstrong.jpg);
+    background-position: center top;
+    background-size: cover;
+  }
+  .containerGrid .grid2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-image: url(../media/Buzz-Aldrin.jpg);
+    background-position: center top;
+    background-size: cover;
+  }
+  .containerGrid .grid3 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-image: url(../media/Charles\ Conrad.jpg);
+    background-position: center center;
+    background-size: cover;
+  }
+  .containerGrid .grid4 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-image: url(../media/Alan-Bean.jpg);
+    background-position: center top;
+    background-size: cover;
+  }
+  .containerGrid .grid5 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    background-image: url(../media/Alan\ Shepard.jpg);
+    background-position: center top;
+    background-size: cover;
+  }
+  .containerGrid .grid6 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    background-image: url(../media/Ed\ Mitchell.jpg);
+    background-position: center top;
+    background-size: cover;
+  }
+  .containerGrid .grid7 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    background-image: url(../media/Dave\ Scott.jpg);
+    background-position: center top;
+    background-size: cover;
+  }
+  .containerGrid .grid8 {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    background-image: url(../media/Jim\ Irwin.jpg);
+    background-position: center top;
+    background-size: cover;
+  }
+  .containerGrid .grid9 {
+    grid-column: 1/2;
+    grid-row: 5/6;
+    background-image: url(../media/John\ W.\ Young.jpg);
+    background-position: center top;
+    background-size: cover;
+  }
+  .containerGrid .grid10 {
+    grid-column: 2/3;
+    grid-row: 5/6;
+    background-image: url(../media/Charles\ Moss\ Duke\ Jr.jpg);
+    background-position: center center;
+    background-size: cover;
+  }
+  .containerGrid .grid11 {
+    grid-column: 1/2;
+    grid-row: 6/7;
+    background-image: url(../media/Eugene\ Cernan.jpg);
+    background-position: center top;
+    background-size: cover;
+  }
+  .containerGrid .grid12 {
+    grid-column: 2/3;
+    grid-row: 6/7;
+    background-image: url(../media/Harrison\ Schmitt.jpg);
+    background-position: center top;
+    background-size: cover;
+  }
 }/*# sourceMappingURL=style.css.map */

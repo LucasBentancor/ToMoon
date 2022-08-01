@@ -31,6 +31,7 @@
     p{
         font-family: $fontfamily3;
         font-size: $fontsize3;
+        line-height: $lineheight3;
         margin: 0px 40px 100px 40px;    
     }
 }
@@ -121,5 +122,18 @@
         background-position: center center;
         background-size: cover;
         transition: 0.3s;
+    }
+}
+
+@media (max-width: 975px){
+    .gridContainerMargaret{
+        width: 100%;
+        height: auto;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 300px 300px;
+        padding: 0px 10px 100px 10px;
+        grid-gap: 20px
     }
 }

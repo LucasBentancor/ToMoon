@@ -114,8 +114,9 @@ main{
                     line-height: $lineheight2;  
                 }
                 p{
-                    font-size: $fontsize4;
                     font-family: $fontfamily3;
+                    font-size: $fontsize4;
+                    line-height: $lineheight4;
                     padding-top: 10px;
                     padding-bottom: 10px;
                 }
@@ -156,6 +157,7 @@ main{
         p{
             font-family: $fontfamily3;
             font-size: $fontsize3;
+            line-height: $lineheight3;
             height: min-content;
             text-align: left;
             width: 85%;

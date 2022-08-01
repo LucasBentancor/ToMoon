@@ -6,6 +6,16 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     color: rgb(222, 222, 222);
+    
+    ::-webkit-scrollbar{
+        width: 8px;
+        background-color: rgb(12, 12, 12);
+    }
+    ::-webkit-scrollbar-thumb{
+        background-color: rgba(172, 172, 172, 0.84);
+        border-radius: 5px;
+        border: 1px solid rgba(0, 0, 0, 0.568)
+    }
 }
 
 // variables Tipografias | Medidas de fuentes | Paleta
