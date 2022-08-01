@@ -55,6 +55,7 @@ $lineheight4:24px;
 @mixin titulocenter {
     font-family: $fontfamily2;
     font-size: $fontsize2;
+    width: max-content;
     background-color: rgba(226, 226, 226, 0.178);
     text-align: center;
     padding: 10px 20px 20px 20px;
