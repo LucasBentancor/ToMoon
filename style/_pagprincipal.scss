@@ -76,6 +76,8 @@ main{
             justify-content: center;        
             h3{
                 @include titulocenter;
+                margin-top: 80px;
+                margin-bottom: 100px;
             }
         }
         .ContainerCarta{

@@ -125,10 +125,8 @@ main .cartas .bgTituloSecciones {
 main .cartas .bgTituloSecciones h3 {
   font-family: plateia;
   font-size: 26px;
-  color: rgb(222, 222, 222);
   background-color: rgba(226, 226, 226, 0.178);
   text-align: center;
-  margin: 100px 20px 100px 20px;
   padding: 10px 20px 20px 20px;
   border: 1px solid rgba(241, 241, 241, 0.767);
   border-top-left-radius: 4px;
@@ -136,6 +134,8 @@ main .cartas .bgTituloSecciones h3 {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 4px;
   box-shadow: 0px 6px 10px rgb(204, 204, 204);
+  margin-top: 80px;
+  margin-bottom: 100px;
 }
 main .cartas .ContainerCarta {
   display: flex;
@@ -215,7 +215,6 @@ main .containerConcept h4 {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  color: rgb(222, 222, 222);
   background-color: rgba(226, 226, 226, 0.178);
   text-align: center;
   margin-top: 100px;
@@ -382,4 +381,103 @@ header nav .menu .menuDesplegable a h2 {
   100% {
     opacity: 1;
   }
+}
+.fondoAM {
+  background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(1, 34, 54, 0.952), rgb(0, 0, 0));
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.containerTituloAM {
+  padding: 183px 20px 100px 20px;
+  display: flex;
+  justify-content: center;
+}
+.containerTituloAM h3 {
+  font-family: plateia;
+  font-size: 26px;
+  background-color: rgba(226, 226, 226, 0.178);
+  text-align: center;
+  padding: 10px 20px 20px 20px;
+  border: 1px solid rgba(241, 241, 241, 0.767);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 4px;
+  box-shadow: 0px 6px 10px rgb(204, 204, 204);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.containerSeccion1AM {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0px 20px 100px 20px;
+}
+.containerSeccion1AM img {
+  height: 317px;
+  width: 600px;
+  border: 3px solid black;
+  border-radius: 4px;
+  box-shadow: -10px 20px 20px black;
+  filter: brightness(1.3);
+  margin-bottom: 60px;
+}
+.containerSeccion1AM p {
+  font-family: typori;
+  font-size: 22px;
+  background-color: rgba(255, 255, 255, 0.128);
+  height: 600px;
+  width: 600px;
+  padding: 10px;
+  overflow: auto;
+  border: 3px solid black;
+  border-radius: 4px;
+  box-shadow: 10px 20px 20px black;
+}
+.containerSeccion1AM p::-webkit-scrollbar {
+  width: 8px;
+}
+.containerSeccion1AM p::-webkit-scrollbar-thumb {
+  background-color: rgba(95, 95, 95, 0.84);
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.568);
+}
+
+.containerTituloVideo {
+  margin: 100px 10px 100px 10px;
+  display: flex;
+  justify-content: flex-start;
+  font-family: plateia;
+  font-size: 26px;
+}
+
+.containerVideoMoon {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+.containerVideoMoon video {
+  border: 1px solid rgba(222, 222, 222, 0.637);
+  box-shadow: -10px 20px 20px black;
+}
+
+.containerCuerpoVideo {
+  padding: 0px 20px 100px 20px;
+}
+.containerCuerpoVideo p {
+  font-family: typori;
+  font-size: 22px;
+  background-color: rgba(255, 255, 255, 0.062);
+  height: auto;
+  width: 100%;
+  padding: 10px;
+  border: 3px solid black;
+  border-radius: 4px;
+  box-shadow: 10px 20px 20px black;
 }/*# sourceMappingURL=style.css.map */
