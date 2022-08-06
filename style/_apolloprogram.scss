@@ -33,7 +33,7 @@
         text-align: justify;
         border: 1px solid black;
         border-radius: 8px;
-        box-shadow: $shadowBotLeftW;
+        // box-shadow: $shadowBotLeftW;
     }
 
     .imgPA{
@@ -44,10 +44,21 @@
             height: auto;
             border: 1px solid rgba(255, 255, 255, 0.753);
             filter: brightness(0.9);
-            box-shadow: $shadowRadiusLightW;
+            // box-shadow: $shadowRadiusLightW;
         }
     }
 }
+.containerCuerpoPA{
+    @for $incremento from 1 through 4 {
+        .incremento-#{$incremento} {
+            box-shadow: -2px 3px 6px * $incremento rgba(255, 255, 255, 0.568);
+            border: 1px * $incremento solid rgba(222, 222, 222, 0.274);
+        }
+    }
+}
+
+
+
 
 .containerBotonApollo{
     display: flex;

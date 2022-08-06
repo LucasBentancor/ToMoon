@@ -65,33 +65,10 @@ main .presentacion h2 span {
   justify-content: center;
   font-size: 42px;
   line-height: 75px;
-  -webkit-animation-name: space;
-          animation-name: space;
-  -webkit-animation-duration: 0.55s;
-          animation-duration: 0.55s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s;
-}
-@-webkit-keyframes space {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 0.25;
-  }
-  50% {
-    opacity: 0.5;
-    transform: scale(1.12);
-  }
-  75% {
-    opacity: 0.65;
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
+  animation-name: space;
+  animation-duration: 0.55s;
+  animation-timing-function: linear;
+  animation-delay: 0.1s;
 }
 @keyframes space {
   0% {
@@ -120,8 +97,6 @@ main .cutPageP1 {
   box-shadow: 0px -4px 20px rgba(0, 0, 0, 0.904);
 }
 main .cartas {
-  height: -webkit-max-content;
-  height: -moz-max-content;
   height: max-content;
   padding-bottom: 60px;
   width: 100%;
@@ -134,8 +109,6 @@ main .cartas .bgTituloSecciones {
 main .cartas .bgTituloSecciones h3 {
   font-family: plateia;
   font-size: 26px;
-  width: -webkit-max-content;
-  width: -moz-max-content;
   width: max-content;
   background-color: rgba(226, 226, 226, 0.178);
   text-align: center;
@@ -215,19 +188,19 @@ main .cutPage2 {
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.904);
 }
 main .containerConcept {
-  background-color: rgba(0, 0, 0, 0.404);
+  z-index: 1;
+  background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(32, 23, 2), rgb(0, 0, 0));
   height: auto;
   width: 100%;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
+  align-items: center;
   padding: 100px 0px 100px 0px;
 }
 main .containerConcept h4 {
   font-family: plateia;
   font-size: 26px;
-  width: -webkit-max-content;
-  width: -moz-max-content;
   width: max-content;
   background-color: rgba(226, 226, 226, 0.178);
   text-align: center;
@@ -246,20 +219,20 @@ main .containerConcept p {
   font-family: typori;
   font-size: 22px;
   line-height: 26.4px;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-  text-align: left;
-  width: 85%;
-  padding: 0px 20px 100px 20px;
+  height: 100%;
+  text-align: center;
+  width: 80%;
+  padding: 20px 20px 20px 20px;
+  border: 1px solid rgb(222, 222, 222);
+  border-radius: 15px;
+  box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.568);
+  background-color: rgba(201, 201, 201, 0.164);
 }
 
 footer {
   font-family: azonix;
   font-size: 26px;
   background-color: rgba(2, 2, 2, 0.956);
-  height: -webkit-min-content;
-  height: -moz-min-content;
   height: min-content;
   width: 100%;
   padding-top: 10px;
@@ -311,14 +284,11 @@ header nav .menu a img {
   height: 65px;
   width: 65px;
   filter: drop-shadow(0px 0px 12px rgba(9, 9, 9, 0.904));
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-timing-function: linear;
 }
 header nav .menu .menuDesplegable {
   display: none;
   position: absolute;
-  width: -webkit-max-content;
-  width: -moz-max-content;
   width: max-content;
   right: 0%;
   top: 82px;
@@ -354,30 +324,9 @@ header nav .menu .menuDesplegable a h2 {
 
 .menu:hover > .menuDesplegable {
   display: block;
-  -webkit-animation-name: desplegable;
-          animation-name: desplegable;
-  -webkit-animation-duration: 0.3s;
-          animation-duration: 0.3s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-}
-
-@-webkit-keyframes desplegable {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 0.25;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  75% {
-    opacity: 0.75;
-  }
-  100% {
-    opacity: 1;
-  }
+  animation-name: desplegable;
+  animation-duration: 0.3s;
+  animation-timing-function: linear;
 }
 
 @keyframes desplegable {
@@ -400,8 +349,6 @@ header nav .menu .menuDesplegable a h2 {
 .fondoAM {
   background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(1, 34, 54, 0.952), rgb(0, 0, 0));
   width: 100%;
-  height: -webkit-max-content;
-  height: -moz-max-content;
   height: max-content;
 }
 
@@ -413,8 +360,6 @@ header nav .menu .menuDesplegable a h2 {
 .containerTituloAM h3 {
   font-family: plateia;
   font-size: 26px;
-  width: -webkit-max-content;
-  width: -moz-max-content;
   width: max-content;
   background-color: rgba(226, 226, 226, 0.178);
   text-align: center;
@@ -516,8 +461,6 @@ header nav .menu .menuDesplegable a h2 {
 .containerTituloP3 h3 {
   font-family: plateia;
   font-size: 26px;
-  width: -webkit-max-content;
-  width: -moz-max-content;
   width: max-content;
   background-color: rgba(226, 226, 226, 0.178);
   text-align: center;
@@ -570,8 +513,6 @@ header nav .menu .menuDesplegable a h2 {
 .containerSubTituloMargaret h3 {
   font-family: plateia;
   font-size: 26px;
-  width: -webkit-max-content;
-  width: -moz-max-content;
   width: max-content;
   background-color: rgba(226, 226, 226, 0.178);
   text-align: center;
@@ -676,8 +617,6 @@ header nav .menu .menuDesplegable a h2 {
 .containerTituloPA h3 {
   font-family: plateia;
   font-size: 26px;
-  width: -webkit-max-content;
-  width: -moz-max-content;
   width: max-content;
   background-color: rgba(226, 226, 226, 0.178);
   text-align: center;
@@ -705,14 +644,11 @@ header nav .menu .menuDesplegable a h2 {
   margin-top: 50px;
   background-color: rgba(16, 16, 16, 0.374);
   padding: 5px 20px 5px 20px;
-  height: -webkit-min-content;
-  height: -moz-min-content;
   height: min-content;
   width: 600px;
   text-align: justify;
   border: 1px solid black;
   border-radius: 8px;
-  box-shadow: -4px 6px 12px rgba(255, 255, 255, 0.568);
 }
 .containerCuerpoPA .imgPA {
   margin: 20px 10px 20px 10px;
@@ -722,7 +658,23 @@ header nav .menu .menuDesplegable a h2 {
   height: auto;
   border: 1px solid rgba(255, 255, 255, 0.753);
   filter: brightness(0.9);
-  box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.568);
+}
+
+.containerCuerpoPA .incremento-1 {
+  box-shadow: -2px 3px 6px rgba(255, 255, 255, 0.568);
+  border: 1px solid rgba(222, 222, 222, 0.274);
+}
+.containerCuerpoPA .incremento-2 {
+  box-shadow: -2px 3px 12px rgba(255, 255, 255, 0.568);
+  border: 2px solid rgba(222, 222, 222, 0.274);
+}
+.containerCuerpoPA .incremento-3 {
+  box-shadow: -2px 3px 18px rgba(255, 255, 255, 0.568);
+  border: 3px solid rgba(222, 222, 222, 0.274);
+}
+.containerCuerpoPA .incremento-4 {
+  box-shadow: -2px 3px 24px rgba(255, 255, 255, 0.568);
+  border: 4px solid rgba(222, 222, 222, 0.274);
 }
 
 .containerBotonApollo {
@@ -763,8 +715,6 @@ header nav .menu .menuDesplegable a h2 {
 .containerTituloAS h3 {
   font-family: plateia;
   font-size: 26px;
-  width: -webkit-max-content;
-  width: -moz-max-content;
   width: max-content;
   background-color: rgba(226, 226, 226, 0.178);
   text-align: center;
@@ -832,11 +782,7 @@ header nav .menu .menuDesplegable a h2 {
   background-color: rgba(0, 0, 0, 0.6);
   border: 1px solid white;
   border-radius: 10px;
-  width: -webkit-min-content;
-  width: -moz-min-content;
   width: min-content;
-  height: -webkit-min-content;
-  height: -moz-min-content;
   height: min-content;
   box-shadow: 0px 0px 6px rgba(9, 9, 9, 0.904);
   margin-bottom: 10px;
@@ -1036,4 +982,6 @@ header nav .menu .menuDesplegable a h2 {
     grid-column: 2/3;
     grid-row: 6/7;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

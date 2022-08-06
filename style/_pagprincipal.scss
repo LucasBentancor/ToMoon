@@ -144,28 +144,23 @@ main{
     .cutPage2{
         @include cutpage2;
     }
-    .containerConcept{
-        background-color: rgba(0, 0, 0, 0.404);
-        height: auto;
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-        padding: 100px 0px 100px 0px;
-        h4{
-            @include tituloleft;
+    .containerConcept {
+        @if $concept == conceptIn{
+            @include conceptIn;
         }
-        p{
-            font-family: $fontfamily3;
-            font-size: $fontsize3;
-            line-height: $lineheight3;
-            height: min-content;
-            text-align: left;
-            width: 85%;
-            padding: 0px 20px 100px 20px;
+    
+        @else if $concept == conceptOut{
+            @include conceptOut;
         }
     }
+    
 }
+
+
+
+
+
+
 
 footer{
     font-family: $fontfamily1;
