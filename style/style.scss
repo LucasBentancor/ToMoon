@@ -1,3 +1,4 @@
+
 // Diseño general
 
 *{
@@ -23,15 +24,15 @@
 
 @font-face {
     font-family: azonix;
-    src: url(./tipografia/Azonix.otf);
+    src: url(../tipografia/Azonix.otf);
 }
 @font-face {
     font-family: plateia;
-    src: url(./tipografia/Plateia\ Bold.ttf);
+    src: url(../tipografia/Plateia\ Bold.ttf);
 }
 @font-face {
     font-family: typori;
-    src: url(./tipografia/Typori-Regular.ttf);
+    src: url(../tipografia/Typori-Regular.ttf);
 }
 
 $fontfamily1: azonix; 
@@ -66,6 +67,7 @@ $shadowTopRightW: 6px -4px 12px rgba(255, 255, 255, 0.568);
 $shadowTopLeftW: -6px -4px 12px rgba(255, 255, 255, 0.568);
 $shadowRadiusW: 0px 0px 12px rgba(255, 255, 255, 0.568);
 $shadowRadiusLightW: 0px 0px 6px rgba(255, 255, 255, 0.568);
+
 
 // Cajas personalizadas
 @mixin cutpage {
@@ -120,9 +122,6 @@ $shadowRadiusLightW: 0px 0px 6px rgba(255, 255, 255, 0.568);
     font-family: $fontfamily2;
     font-size: $fontsize2;
 }
-
-
-
 
 // Importaciones: Inicio | header | Footer | About Moon | Margaret Hamilton | Apollo Program | Astronauts
 
