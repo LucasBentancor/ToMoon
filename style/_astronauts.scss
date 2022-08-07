@@ -66,7 +66,6 @@
             border-radius: 10px;
             width: min-content;
             height: min-content;
-            box-shadow: $shadowRadiusLightB;
             margin-bottom: 10px;
             padding: 2px;
         }
@@ -80,6 +79,7 @@ $mapaColorBio:(
 @each $colorBio, $btnColor in $mapaColorBio {
     .btn--#{$colorBio} {
             border: 2px solid $btnColor;
+            box-shadow: 0px 0px 6px $btnColor;
     }
 }
 
