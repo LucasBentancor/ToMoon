@@ -8,7 +8,7 @@
     padding: 183px 20px 100px 20px;
     display: flex;
     justify-content: center;
-    h3{
+    h2{
         @include titulocenter;
     }
 }
@@ -52,7 +52,7 @@
 }
 
 .containerSubTituloMargaret{
-    h3{
+    h2{
         @include tituloleft;
     }
 }

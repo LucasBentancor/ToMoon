@@ -19,7 +19,7 @@ main{
             justify-content: center;
             align-items: center;
             align-content: center;
-            h1{    
+            h2{    
                 font-size: $fontsize1;
                 line-height: 75px;
                 text-shadow: $shadowRadiusLightW;
@@ -74,7 +74,7 @@ main{
         .bgTituloSecciones{
             display: flex;
             justify-content: center;        
-            h3{
+            h2{
                 @include titulocenter;
                 margin-top: 80px;
                 margin-bottom: 100px;
@@ -109,7 +109,7 @@ main{
                 filter: brightness(0.9);
                 transition: 0.25s;
 
-                h4{
+                h1{
                     font-size: $fontsize2;
                     font-family: $fontfamily2;
                     line-height: $lineheight2;  
@@ -122,7 +122,7 @@ main{
                     padding-bottom: 10px;
                 }
                 a{
-                    background-color: #351d01;
+                    background-color: $colorDark;
                     border: 2px solid black;
                     text-align: center;
                     padding: 4px 4px 4px 4px;
@@ -155,12 +155,6 @@ main{
     }
     
 }
-
-
-
-
-
-
 
 footer{
     font-family: $fontfamily1;

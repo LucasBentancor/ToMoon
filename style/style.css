@@ -48,7 +48,7 @@ main .presentacion {
   align-items: center;
   align-content: center;
 }
-main .presentacion h1 {
+main .presentacion h2 {
   font-size: 42px;
   line-height: 75px;
   text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.568);
@@ -106,7 +106,7 @@ main .cartas .bgTituloSecciones {
   display: flex;
   justify-content: center;
 }
-main .cartas .bgTituloSecciones h3 {
+main .cartas .bgTituloSecciones h2 {
   font-family: plateia;
   font-size: 26px;
   width: max-content;
@@ -151,7 +151,7 @@ main .cartas .ContainerCarta div {
   filter: brightness(0.9);
   transition: 0.25s;
 }
-main .cartas .ContainerCarta div h4 {
+main .cartas .ContainerCarta div h1 {
   font-size: 26px;
   font-family: plateia;
   line-height: 31.2px;
@@ -164,7 +164,7 @@ main .cartas .ContainerCarta div p {
   padding-bottom: 10px;
 }
 main .cartas .ContainerCarta div a {
-  background-color: #351d01;
+  background-color: rgba(2, 2, 2, 0.61);
   border: 2px solid black;
   text-align: center;
   padding: 4px 4px 4px 4px;
@@ -303,12 +303,12 @@ header nav .menu .menuDesplegable {
 header nav .menu .menuDesplegable a {
   text-decoration: none;
 }
-header nav .menu .menuDesplegable a h2:hover {
+header nav .menu .menuDesplegable a h1:hover {
   transform: scale(1.04);
   filter: brightness(1);
   box-shadow: 0px 0px 6px rgba(9, 9, 9, 0.904);
 }
-header nav .menu .menuDesplegable a h2 {
+header nav .menu .menuDesplegable a h1 {
   font-family: plateia;
   font-size: 22px;
   border-radius: 10px;
@@ -357,7 +357,7 @@ header nav .menu .menuDesplegable a h2 {
   display: flex;
   justify-content: center;
 }
-.containerTituloAM h3 {
+.containerTituloAM h2 {
   font-family: plateia;
   font-size: 26px;
   width: max-content;
@@ -458,7 +458,7 @@ header nav .menu .menuDesplegable a h2 {
   display: flex;
   justify-content: center;
 }
-.containerTituloP3 h3 {
+.containerTituloP3 h2 {
   font-family: plateia;
   font-size: 26px;
   width: max-content;
@@ -510,7 +510,7 @@ header nav .menu .menuDesplegable a h2 {
   filter: brightness(1);
 }
 
-.containerSubTituloMargaret h3 {
+.containerSubTituloMargaret h2 {
   font-family: plateia;
   font-size: 26px;
   width: max-content;
@@ -614,7 +614,7 @@ header nav .menu .menuDesplegable a h2 {
   display: flex;
   justify-content: center;
 }
-.containerTituloPA h3 {
+.containerTituloPA h2 {
   font-family: plateia;
   font-size: 26px;
   width: max-content;
@@ -710,7 +710,7 @@ header nav .menu .menuDesplegable a h2 {
 .containerTituloAS {
   padding: 183px 20px 100px 20px;
 }
-.containerTituloAS h3 {
+.containerTituloAS h2 {
   font-family: plateia;
   font-size: 26px;
   width: max-content;
@@ -778,13 +778,24 @@ header nav .menu .menuDesplegable a h2 {
   font-family: typori;
   color: rgb(222, 222, 222);
   background-color: rgba(0, 0, 0, 0.6);
-  border: 1px solid white;
   border-radius: 10px;
   width: min-content;
   height: min-content;
   box-shadow: 0px 0px 6px rgba(9, 9, 9, 0.904);
   margin-bottom: 10px;
   padding: 2px;
+}
+.containerGrid .btn--color1 {
+  border: 2px solid rgba(233, 233, 233, 0.47);
+}
+.containerGrid .btn--color2 {
+  border: 2px solid rgba(2, 2, 2, 0.47);
+}
+.containerGrid .btn--color3 {
+  border: 2px solid rgba(212, 175, 55, 0.47);
+}
+.containerGrid .btn--color4 {
+  border: 2px solid rgba(94, 53, 7, 0.47);
 }
 .containerGrid .Neil-Armstrong-grid {
   background-image: url("../media/Neil-Armstrong.jpg");

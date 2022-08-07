@@ -7,7 +7,7 @@
 
 .containerTituloAS{
     padding: 183px 20px 100px 20px;
-    h3{
+    h2{
         @include tituloleft;
         margin: 0px 0px 0px 0px;
     }
@@ -63,7 +63,6 @@
             font-family: $fontfamily3;
             color: rgb(222, 222, 222);
             background-color: rgba(0, 0, 0, 0.6);
-            border: 1px solid white;
             border-radius: 10px;
             width: min-content;
             height: min-content;
@@ -72,6 +71,18 @@
             padding: 2px;
         }
     }
+$mapaColorBio:(
+    color1:rgba(233, 233, 233, 0.470),
+    color2:rgba(2, 2, 2, 0.470),
+    color3:rgba(212, 175, 55, 0.470),
+    color4:rgba(94, 53, 7, 0.470),
+);
+@each $colorBio, $btnColor in $mapaColorBio {
+    .btn--#{$colorBio} {
+            border: 2px solid $btnColor;
+    }
+}
+
 
     @each $nombre in Neil-Armstrong , Buzz-Aldrin , Charles-Conrad , Alan-Bean , Alan-Shepard , Ed-Mitchell , Dave-Scott , Jim-Irwin , John-Young , Charles-Duke ,  Eugene-Cernan , Harrison-Schmitt {
         .#{$nombre}-grid {

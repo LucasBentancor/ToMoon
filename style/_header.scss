@@ -53,12 +53,12 @@
                     a{
                         text-decoration: none;
 
-                        h2:hover{
+                        h1:hover{
                             transform: scale(1.04);
                             filter: brightness(1);
                             box-shadow: $shadowRadiusLightB;
                         }
-                        h2{
+                        h1{
                             font-family: $fontfamily2;
                             font-size: $fontsize3;
                             border-radius: 10px;
