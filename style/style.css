@@ -647,7 +647,6 @@ header nav .menu .menuDesplegable a h2 {
   height: min-content;
   width: 600px;
   text-align: justify;
-  border: 1px solid black;
   border-radius: 8px;
 }
 .containerCuerpoPA .imgPA {
@@ -656,7 +655,6 @@ header nav .menu .menuDesplegable a h2 {
 .containerCuerpoPA .imgPA img {
   width: 100%;
   height: auto;
-  border: 1px solid rgba(255, 255, 255, 0.753);
   filter: brightness(0.9);
 }
 
@@ -788,89 +786,113 @@ header nav .menu .menuDesplegable a h2 {
   margin-bottom: 10px;
   padding: 2px;
 }
-.containerGrid .grid1 {
+.containerGrid .Neil-Armstrong-grid {
+  background-image: url("../media/Neil-Armstrong.jpg");
+  background-size: cover;
+}
+.containerGrid .Buzz-Aldrin-grid {
+  background-image: url("../media/Buzz-Aldrin.jpg");
+  background-size: cover;
+}
+.containerGrid .Charles-Conrad-grid {
+  background-image: url("../media/Charles-Conrad.jpg");
+  background-size: cover;
+}
+.containerGrid .Alan-Bean-grid {
+  background-image: url("../media/Alan-Bean.jpg");
+  background-size: cover;
+}
+.containerGrid .Alan-Shepard-grid {
+  background-image: url("../media/Alan-Shepard.jpg");
+  background-size: cover;
+}
+.containerGrid .Ed-Mitchell-grid {
+  background-image: url("../media/Ed-Mitchell.jpg");
+  background-size: cover;
+}
+.containerGrid .Dave-Scott-grid {
+  background-image: url("../media/Dave-Scott.jpg");
+  background-size: cover;
+}
+.containerGrid .Jim-Irwin-grid {
+  background-image: url("../media/Jim-Irwin.jpg");
+  background-size: cover;
+}
+.containerGrid .John-Young-grid {
+  background-image: url("../media/John-Young.jpg");
+  background-size: cover;
+}
+.containerGrid .Charles-Duke-grid {
+  background-image: url("../media/Charles-Duke.jpg");
+  background-size: cover;
+}
+.containerGrid .Eugene-Cernan-grid {
+  background-image: url("../media/Eugene-Cernan.jpg");
+  background-size: cover;
+}
+.containerGrid .Harrison-Schmitt-grid {
+  background-image: url("../media/Harrison-Schmitt.jpg");
+  background-size: cover;
+}
+.containerGrid .Neil-Armstrong-grid {
   grid-column: 1/2;
   grid-row: 1/2;
-  background-image: url(../media/Neil-Armstrong.jpg);
   background-position: center top;
-  background-size: cover;
 }
-.containerGrid .grid2 {
+.containerGrid .Buzz-Aldrin-grid {
   grid-column: 2/3;
   grid-row: 1/2;
-  background-image: url(../media/Buzz-Aldrin.jpg);
   background-position: center top;
-  background-size: cover;
 }
-.containerGrid .grid3 {
+.containerGrid .Charles-Conrad-grid {
   grid-column: 3/4;
   grid-row: 1/2;
-  background-image: url(../media/Charles\ Conrad.jpg);
   background-position: center center;
-  background-size: cover;
 }
-.containerGrid .grid4 {
+.containerGrid .Alan-Bean-grid {
   grid-column: 4/5;
   grid-row: 1/2;
-  background-image: url(../media/Alan-Bean.jpg);
   background-position: center top;
-  background-size: cover;
 }
-.containerGrid .grid5 {
+.containerGrid .Alan-Shepard-grid {
   grid-column: 1/2;
   grid-row: 2/3;
-  background-image: url(../media/Alan\ Shepard.jpg);
   background-position: center top;
-  background-size: cover;
 }
-.containerGrid .grid6 {
+.containerGrid .Ed-Mitchell-grid {
   grid-column: 2/3;
   grid-row: 2/3;
-  background-image: url(../media/Ed\ Mitchell.jpg);
   background-position: center top;
-  background-size: cover;
 }
-.containerGrid .grid7 {
+.containerGrid .Dave-Scott-grid {
   grid-column: 3/4;
   grid-row: 2/3;
-  background-image: url(../media/Dave\ Scott.jpg);
   background-position: center top;
-  background-size: cover;
 }
-.containerGrid .grid8 {
+.containerGrid .Jim-Irwin-grid {
   grid-column: 4/5;
   grid-row: 2/3;
-  background-image: url(../media/Jim\ Irwin.jpg);
   background-position: center top;
-  background-size: cover;
 }
-.containerGrid .grid9 {
+.containerGrid .John-Young-grid {
   grid-column: 1/2;
   grid-row: 3/4;
-  background-image: url(../media/John\ W.\ Young.jpg);
   background-position: center top;
-  background-size: cover;
 }
-.containerGrid .grid10 {
+.containerGrid .Charles-Duke-grid {
   grid-column: 2/3;
   grid-row: 3/4;
-  background-image: url(../media/Charles\ Moss\ Duke\ Jr.jpg);
   background-position: center center;
-  background-size: cover;
 }
-.containerGrid .grid11 {
+.containerGrid .Eugene-Cernan-grid {
   grid-column: 3/4;
   grid-row: 3/4;
-  background-image: url(../media/Eugene\ Cernan.jpg);
   background-position: center top;
-  background-size: cover;
 }
-.containerGrid .grid12 {
+.containerGrid .Harrison-Schmitt-grid {
   grid-column: 4/5;
   grid-row: 3/4;
-  background-image: url(../media/Harrison\ Schmitt.jpg);
   background-position: center top;
-  background-size: cover;
 }
 
 @media (max-width: 1131px) {
@@ -879,106 +901,107 @@ header nav .menu .menuDesplegable a h2 {
     grid-template-rows: 300px 300px 300px 300px;
     grid-gap: 30px;
   }
-  .containerGrid .grid1 {
+  .containerGrid .Neil-Armstrong-grid {
     grid-column: 1/2;
     grid-row: 1/2;
   }
-  .containerGrid .grid2 {
+  .containerGrid .Buzz-Aldrin-grid {
     grid-column: 2/3;
     grid-row: 1/2;
   }
-  .containerGrid .grid3 {
+  .containerGrid .Charles-Conrad-grid {
     grid-column: 3/4;
     grid-row: 1/2;
   }
-  .containerGrid .grid4 {
+  .containerGrid .Alan-Bean-grid {
     grid-column: 1/2;
     grid-row: 2/3;
   }
-  .containerGrid .grid5 {
+  .containerGrid .Alan-Shepard-grid {
     grid-column: 2/3;
     grid-row: 2/3;
   }
-  .containerGrid .grid6 {
+  .containerGrid .Ed-Mitchell-grid {
     grid-column: 3/4;
     grid-row: 2/3;
   }
-  .containerGrid .grid7 {
+  .containerGrid .Dave-Scott-grid {
     grid-column: 1/2;
     grid-row: 3/4;
   }
-  .containerGrid .grid8 {
+  .containerGrid .Jim-Irwin-grid {
     grid-column: 2/3;
     grid-row: 3/4;
   }
-  .containerGrid .grid9 {
+  .containerGrid .John-Young-grid {
     grid-column: 3/4;
     grid-row: 3/4;
   }
-  .containerGrid .grid10 {
+  .containerGrid .Charles-Duke-grid {
     grid-column: 1/2;
     grid-row: 4/5;
   }
-  .containerGrid .grid11 {
+  .containerGrid .Eugene-Cernan-grid {
     grid-column: 2/3;
     grid-row: 4/5;
   }
-  .containerGrid .grid12 {
+  .containerGrid .Harrison-Schmitt-grid {
     grid-column: 3/4;
     grid-row: 4/5;
   }
 }
 @media (max-width: 850px) {
   .containerGrid {
+    justify-content: space-around;
     grid-template-columns: repeat(2, 205px);
-    grid-template-rows: 255 255 255 255 255 255;
+    grid-template-rows: 255px 255px 255px 255px 255px 255px;
     grid-gap: 20px;
   }
-  .containerGrid .grid1 {
+  .containerGrid .Neil-Armstrong-grid {
     grid-column: 1/2;
     grid-row: 1/2;
   }
-  .containerGrid .grid2 {
+  .containerGrid .Buzz-Aldrin-grid {
     grid-column: 2/3;
     grid-row: 1/2;
   }
-  .containerGrid .grid3 {
+  .containerGrid .Charles-Conrad-grid {
     grid-column: 1/2;
     grid-row: 2/3;
   }
-  .containerGrid .grid4 {
+  .containerGrid .Alan-Bean-grid {
     grid-column: 2/3;
     grid-row: 2/3;
   }
-  .containerGrid .grid5 {
+  .containerGrid .Alan-Shepard-grid {
     grid-column: 1/2;
     grid-row: 3/4;
   }
-  .containerGrid .grid6 {
+  .containerGrid .Ed-Mitchell-grid {
     grid-column: 2/3;
     grid-row: 3/4;
   }
-  .containerGrid .grid7 {
+  .containerGrid .Dave-Scott-grid {
     grid-column: 1/2;
     grid-row: 4/5;
   }
-  .containerGrid .grid8 {
+  .containerGrid .Jim-Irwin-grid {
     grid-column: 2/3;
     grid-row: 4/5;
   }
-  .containerGrid .grid9 {
+  .containerGrid .John-Young-grid {
     grid-column: 1/2;
     grid-row: 5/6;
   }
-  .containerGrid .grid10 {
+  .containerGrid .Charles-Duke-grid {
     grid-column: 2/3;
     grid-row: 5/6;
   }
-  .containerGrid .grid11 {
+  .containerGrid .Eugene-Cernan-grid {
     grid-column: 1/2;
     grid-row: 6/7;
   }
-  .containerGrid .grid12 {
+  .containerGrid .Harrison-Schmitt-grid {
     grid-column: 2/3;
     grid-row: 6/7;
   }

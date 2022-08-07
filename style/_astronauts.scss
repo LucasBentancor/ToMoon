@@ -72,89 +72,73 @@
             padding: 2px;
         }
     }
-    .grid1{
+
+    @each $nombre in Neil-Armstrong , Buzz-Aldrin , Charles-Conrad , Alan-Bean , Alan-Shepard , Ed-Mitchell , Dave-Scott , Jim-Irwin , John-Young , Charles-Duke ,  Eugene-Cernan , Harrison-Schmitt {
+        .#{$nombre}-grid {
+            background-image: url("../media/#{$nombre}.jpg");
+            background-size: cover;
+        }
+    }
+    
+    .Neil-Armstrong-grid{
         grid-column: 1/2;
         grid-row: 1/2;
-        background-image: url(../media/Neil-Armstrong.jpg);
         background-position: center top;
-        background-size: cover;
     }
-    .grid2{
+    .Buzz-Aldrin-grid{
         grid-column: 2/3;
         grid-row: 1/2;
-        background-image: url(../media/Buzz-Aldrin.jpg);
         background-position: center top;
-        background-size: cover;
     }
-    .grid3{
+    .Charles-Conrad-grid{
         grid-column: 3/4;
         grid-row: 1/2;
-        background-image: url(../media/Charles\ Conrad.jpg);
         background-position: center center;
-        background-size: cover;
     }
-    .grid4{
+    .Alan-Bean-grid{
         grid-column: 4/5;
         grid-row: 1/2;
-        background-image: url(../media/Alan-Bean.jpg);
         background-position: center top;
-        background-size: cover;
     }
-    .grid5{
+    .Alan-Shepard-grid{
         grid-column: 1/2;
         grid-row: 2/3;
-        background-image: url(../media/Alan\ Shepard.jpg);
         background-position: center top;
-        background-size: cover;
     }
-    .grid6{
+    .Ed-Mitchell-grid{
         grid-column: 2/3;
         grid-row: 2/3;
-        background-image: url(../media/Ed\ Mitchell.jpg);
         background-position: center top;
-        background-size: cover;
     }
-    .grid7{
+    .Dave-Scott-grid{
         grid-column: 3/4;
         grid-row: 2/3;
-        background-image: url(../media/Dave\ Scott.jpg);
         background-position: center top;
-        background-size: cover;
     }
-    .grid8{
+    .Jim-Irwin-grid{
         grid-column: 4/5;
         grid-row: 2/3;
-        background-image: url(../media/Jim\ Irwin.jpg);
         background-position: center top;
-        background-size: cover;
     }
-    .grid9{
+    .John-Young-grid{
         grid-column: 1/2;
         grid-row: 3/4;
-        background-image: url(../media/John\ W.\ Young.jpg);
         background-position: center top;
-        background-size: cover;
     }
-    .grid10{
+    .Charles-Duke-grid{
         grid-column: 2/3;
         grid-row: 3/4;
-        background-image: url(../media/Charles\ Moss\ Duke\ Jr.jpg);
         background-position: center center;
-        background-size: cover;
     }
-    .grid11{
+    .Eugene-Cernan-grid{
         grid-column: 3/4;
         grid-row: 3/4;
-        background-image: url(../media/Eugene\ Cernan.jpg);
         background-position: center top;
-        background-size: cover;
     }
-    .grid12{
+    .Harrison-Schmitt-grid{
         grid-column: 4/5;
         grid-row: 3/4;
-        background-image: url(../media/Harrison\ Schmitt.jpg);
         background-position: center top;
-        background-size: cover;
     }
 }
 
@@ -164,51 +148,51 @@
         grid-template-rows: 300px 300px 300px 300px;
         grid-gap: 30px;
 
-        .grid1{
+        .Neil-Armstrong-grid{
             grid-column: 1/2;
             grid-row: 1/2;
         }
-        .grid2{
+        .Buzz-Aldrin-grid{
             grid-column: 2/3;
             grid-row: 1/2;
         }
-        .grid3{
+        .Charles-Conrad-grid{
             grid-column: 3/4;
             grid-row: 1/2;
         }
-        .grid4{
+        .Alan-Bean-grid{
             grid-column: 1/2;
             grid-row: 2/3;
         }
-        .grid5{
+        .Alan-Shepard-grid{
             grid-column: 2/3;
             grid-row: 2/3;
         }
-        .grid6{
+        .Ed-Mitchell-grid{
             grid-column: 3/4;
             grid-row: 2/3;
         }
-        .grid7{
+        .Dave-Scott-grid{
             grid-column: 1/2;
             grid-row: 3/4;
         }
-        .grid8{
+        .Jim-Irwin-grid{
             grid-column: 2/3;
             grid-row: 3/4;
         }
-        .grid9{
+        .John-Young-grid{
             grid-column: 3/4;
             grid-row: 3/4;
         }
-        .grid10{
+        .Charles-Duke-grid{
             grid-column: 1/2;
             grid-row: 4/5;
         }
-        .grid11{
+        .Eugene-Cernan-grid{
             grid-column: 2/3;
             grid-row: 4/5;
         }
-        .grid12{
+        .Harrison-Schmitt-grid{
             grid-column: 3/4;
             grid-row: 4/5;
         }
@@ -217,55 +201,56 @@
 
 @media (max-width: 850px){
     .containerGrid{
+        justify-content: space-around;
         grid-template-columns: repeat(2, 205px);
-        grid-template-rows: 255 255 255 255 255 255;
+        grid-template-rows: 255px 255px 255px 255px 255px 255px;
         grid-gap: 20px;
 
-        .grid1{
+        .Neil-Armstrong-grid{
             grid-column: 1/2;
             grid-row: 1/2;
         }
-        .grid2{
+        .Buzz-Aldrin-grid{
             grid-column: 2/3;
             grid-row: 1/2;
         }
-        .grid3{
+        .Charles-Conrad-grid{
             grid-column: 1/2;
             grid-row: 2/3;
         }
-        .grid4{
+        .Alan-Bean-grid{
             grid-column: 2/3;
             grid-row: 2/3;
         }
-        .grid5{
+        .Alan-Shepard-grid{
             grid-column: 1/2;
             grid-row: 3/4;
         }
-        .grid6{
+        .Ed-Mitchell-grid{
             grid-column: 2/3;
             grid-row: 3/4;
         }
-        .grid7{
+        .Dave-Scott-grid{
             grid-column: 1/2;
             grid-row: 4/5;
         }
-        .grid8{
+        .Jim-Irwin-grid{
             grid-column: 2/3;
             grid-row: 4/5;
         }
-        .grid9{
+        .John-Young-grid{
             grid-column: 1/2;
             grid-row: 5/6;
         }
-        .grid10{
+        .Charles-Duke-grid{
             grid-column: 2/3;
             grid-row: 5/6;
         }
-        .grid11{
+        .Eugene-Cernan-grid{
             grid-column: 1/2;
             grid-row: 6/7;
         }
-        .grid12{
+        .Harrison-Schmitt-grid{
             grid-column: 2/3;
             grid-row: 6/7;
         }

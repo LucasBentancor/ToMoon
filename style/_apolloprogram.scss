@@ -31,9 +31,7 @@
         height: min-content;
         width: 600px;
         text-align: justify;
-        border: 1px solid black;
         border-radius: 8px;
-        // box-shadow: $shadowBotLeftW;
     }
 
     .imgPA{
@@ -42,9 +40,7 @@
         img{
             width: 100%;
             height: auto;
-            border: 1px solid rgba(255, 255, 255, 0.753);
             filter: brightness(0.9);
-            // box-shadow: $shadowRadiusLightW;
         }
     }
 }
