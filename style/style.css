@@ -27,6 +27,10 @@
   font-family: typori;
   src: url(../tipografia/Typori-Regular.ttf);
 }
+@font-face {
+  font-family: zabal;
+  src: url(../tipografia/ZabalDEMO-SemiBold.otf);
+}
 .fondo {
   position: fixed;
   z-index: -1;
@@ -215,7 +219,7 @@ main .containerConcept h4 {
   box-shadow: 0px 6px 10px rgba(255, 255, 255, 0.568);
 }
 main .containerConcept p {
-  font-family: typori;
+  font-family: zabal;
   font-size: 22px;
   line-height: 26.4px;
   height: min-content;
@@ -390,17 +394,9 @@ header nav .menu .menuDesplegable a h1 {
   filter: brightness(1.3);
   margin-bottom: 60px;
 }
-.containerSeccion1AM .cuerpoMoon::-webkit-scrollbar, .containerSeccion1AM .cuerpoMoonV::-webkit-scrollbar {
-  width: 8px;
-}
-.containerSeccion1AM .cuerpoMoon::-webkit-scrollbar-thumb, .containerSeccion1AM .cuerpoMoonV::-webkit-scrollbar-thumb {
-  background-color: rgba(95, 95, 95, 0.84);
-  border-radius: 5px;
-  border: 1px solid rgba(0, 0, 0, 0.568);
-}
 
-.cuerpoMoon, .cuerpoMoonV {
-  font-family: typori;
+.cuerpoMoon, .containerFL .containerLista, .cuerpoMoonV {
+  font-family: zabal;
   font-size: 22px;
   line-height: 26.4px;
   background-color: rgba(250, 250, 250, 0.075);
@@ -443,18 +439,13 @@ header nav .menu .menuDesplegable a h1 {
   border: 1px solid rgba(211, 211, 211, 0.356);
   box-shadow: 0px 0px 6px rgba(9, 9, 9, 0.904);
 }
+.tabla table .tdLeft {
+  text-align: left;
+}
 
 .cuerpoMoonV {
   width: 100%;
   height: max-content;
-}
-
-.containerTituloVideo {
-  margin: 100px 10px 100px 10px;
-  display: flex;
-  justify-content: flex-start;
-  font-family: plateia;
-  font-size: 26px;
 }
 
 .containerVideoMoon {
@@ -462,14 +453,37 @@ header nav .menu .menuDesplegable a h1 {
   display: flex;
   justify-content: center;
   padding-bottom: 100px;
+  padding-top: 100px;
 }
 .containerVideoMoon video {
   border: 1px solid rgba(0, 0, 0, 0.637);
   box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.568);
 }
 
-.containerCuerpoVideo {
-  padding: 0px 20px 100px 20px;
+.containerFL {
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.containerFL .tituloFases {
+  margin: 100px 10px 100px 10px;
+  display: flex;
+  justify-content: flex-start;
+  font-family: plateia;
+  font-size: 26px;
+  margin-top: 0px;
+}
+.containerFL .containerLista {
+  background-color: rgba(226, 226, 226, 0.178);
+  height: min-content;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.containerFL .containerLista ul {
+  padding: 10px 10px 10px 20px;
 }
 
 .fondoMH {
@@ -515,7 +529,7 @@ header nav .menu .menuDesplegable a h1 {
   justify-content: center;
 }
 .containerCuerpoMargaret p {
-  font-family: typori;
+  font-family: zabal;
   font-size: 22px;
   line-height: 26.4px;
   margin: 0px 40px 100px 40px;
@@ -663,7 +677,7 @@ header nav .menu .menuDesplegable a h1 {
   align-items: center;
 }
 .containerCuerpoPA p {
-  font-family: typori;
+  font-family: zabal;
   font-size: 22px;
   line-height: 26.4px;
   margin-top: 50px;
@@ -759,7 +773,7 @@ header nav .menu .menuDesplegable a h1 {
   justify-content: center;
 }
 .containerCuerpoAS p {
-  font-family: typori;
+  font-family: zabal;
   font-size: 22px;
   line-height: 26.4px;
   margin: 0px 20px 100px 20px;

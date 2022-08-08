@@ -30,18 +30,10 @@
             margin-bottom: 60px;            
         }
     }
-    .cuerpoMoon::-webkit-scrollbar{
-        width: 8px;
-    }
-    .cuerpoMoon::-webkit-scrollbar-thumb{
-        background-color: rgba(95, 95, 95, 0.84);
-        border-radius: 5px;
-        border: 1px solid rgba(0, 0, 0, 0.568)
-    }
 }
 
 .cuerpoMoon{
-    font-family: $fontfamily3;
+    font-family: $fontfamily4;
     font-size: $fontsize3;
     line-height: $lineheight3;
     background-color: rgba(250, 250, 250, 0.075);
@@ -78,6 +70,9 @@
             border:1px solid rgba(211, 211, 211, 0.356);
             box-shadow: $shadowRadiusLightB;
         }
+        .tdLeft{
+            text-align: left
+        }
     }
 }
 
@@ -86,22 +81,40 @@
     width: 100%;
     height: max-content;
 }
-.containerTituloVideo{
-    @include subtitulo;
-}
 
-.containerVideoMoon{
+.containerVideoMoon {
     width: 100%;
     display: flex;
     justify-content: center;
     padding-bottom: 100px;
+    padding-top: 100px;
     video{
         border: 1px solid rgba(0, 0, 0, 0.637);
         box-shadow: $shadowRadiusW;    
     }
 }
 
-.containerCuerpoVideo{
-    padding: 0px 20px 100px 20px;
+.containerFL{
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .tituloFases{
+        @include subtitulo;
+        margin-top: 0px;
+    }
+
+    .containerLista{
+        @extend .cuerpoMoon;
+        background-color: rgba(226, 226, 226, 0.178);
+        height: min-content;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        ul{
+            padding: 10px 10px 10px 20px;
+        }
+    }
 }
 
