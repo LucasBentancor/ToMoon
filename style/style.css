@@ -125,7 +125,7 @@ main .cartas .bgTituloSecciones h2 {
 main .cartas .ContainerCarta {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   height: auto;
   margin-bottom: 100px;
 }
@@ -135,24 +135,24 @@ main .cartas .ContainerCarta div:hover {
   transform: rotate3d(1, 1, 0, 13deg);
 }
 main .cartas .ContainerCarta div {
-  height: 500px;
+  height: 350px;
   width: 400px;
   background-color: rgba(255, 255, 255, 0.303);
   border: 1px solid rgba(255, 255, 255, 0.411);
   border-radius: 20px;
   padding: 20px 20px 20px 20px;
-  margin: 20px 20px 20px 20px;
+  margin: 30px 30px 30px 30px;
   box-shadow: -6px 6px 12px rgba(9, 9, 9, 0.904);
   text-align: center;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-direction: column;
   filter: brightness(0.9);
   transition: 0.25s;
 }
 main .cartas .ContainerCarta div h1 {
-  font-size: 26px;
+  font-size: 24px;
   font-family: plateia;
   line-height: 31.2px;
 }
@@ -160,8 +160,6 @@ main .cartas .ContainerCarta div p {
   font-family: typori;
   font-size: 20px;
   line-height: 24px;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 main .cartas .ContainerCarta div a {
   background-color: rgba(2, 2, 2, 0.61);

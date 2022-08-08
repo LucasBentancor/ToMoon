@@ -83,7 +83,7 @@ main{
         .ContainerCarta{
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-around;
+            justify-content:center;
             height: auto;
             margin-bottom: 100px;
 
@@ -93,33 +93,31 @@ main{
                 transform: rotate3d(1,1,0,13deg);
             }
             div{
-                height: 500px;
+                height: 350px;
                 width: 400px;
                 background-color: rgba(255, 255, 255, 0.303);
                 border: 1px solid rgba(255, 255, 255, 0.411);
                 border-radius: 20px;
                 padding: 20px 20px 20px 20px;
-                margin: 20px 20px 20px 20px;
+                margin: 30px 30px 30px 30px;
                 box-shadow: $shadowBotLeftB;
                 text-align: center;
                 display: flex;
-                justify-content: center;
+                justify-content:space-around;
                 align-items: center;
                 flex-direction: column;
                 filter: brightness(0.9);
                 transition: 0.25s;
 
                 h1{
-                    font-size: $fontsize2;
+                    font-size: 24px;
                     font-family: $fontfamily2;
-                    line-height: $lineheight2;  
+                    line-height: $lineheight2;
                 }
                 p{
                     font-family: $fontfamily3;
                     font-size: $fontsize4;
                     line-height: $lineheight4;
-                    padding-top: 10px;
-                    padding-bottom: 10px;
                 }
                 a{
                     background-color: $colorDark;
