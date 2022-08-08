@@ -53,12 +53,39 @@
     border-radius: 4px;
     box-shadow: $shadowRadiusLightW;
 }
+
+.tabla{
+    padding: 0px 0px 100px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    h2{
+        @include subtitulo;
+        margin: 0px 0px 0px 20px;
+        padding: 0px 0px 100px 0px
+    }
+    table{
+        align-self: center;
+        width: auto;
+        height: 250px;
+        font-family: $fontfamily3;
+        font-size: $fontsize6;
+        text-align: center;
+        background-color: rgba(4, 30, 49, 0.473);
+        box-shadow: $shadowRadiusLightW;
+        th, td{
+            padding: 5px;
+            border:1px solid rgba(211, 211, 211, 0.356);
+            box-shadow: $shadowRadiusLightB;
+        }
+    }
+}
+
 .cuerpoMoonV{
     @extend .cuerpoMoon;
     width: 100%;
     height: max-content;
 }
-
 .containerTituloVideo{
     @include subtitulo;
 }
