@@ -42,6 +42,8 @@ $fontsize1: 42px;
 $fontsize2: 26px;
 $fontsize3: 22px;
 $fontsize4: 20px;
+$fontsize5: 18px;
+$fontsize6: 16px;
 
 $lineheight1:50.4px;
 $lineheight2:31.2px;
@@ -134,7 +136,7 @@ $shadowRadiusLightW: 0px 0px 6px rgba(255, 255, 255, 0.568);
 
 // concept diseño IN | OUT 
 
-$concept: conceptIn;
+$concept: conceptOut;
 
 @mixin conceptIn {
     z-index: 1;
@@ -165,7 +167,7 @@ $concept: conceptIn;
     }
 }
 @mixin conceptOut {
-    background-color: rgba(0, 0, 0, 0.404);
+    background-color: rgba(0, 0, 0, 0.603);
     height: auto;
     width: 100%;
     display: flex;
@@ -181,9 +183,14 @@ $concept: conceptIn;
         font-size: $fontsize3;
         line-height: $lineheight3;
         height: min-content;
-        text-align: left;
-        width: 85%;
-        padding: 0px 20px 100px 20px;
+        text-align: center;
+        align-self: center;
+        width: 80%;
+        padding: 10px 10px 10px 10px;
+        background-color: rgba(169, 240, 240, 0.205);
+        border: 1px solid rgba(0, 0, 0, 0.664);
+        border-radius: 12px;
+        box-shadow: $shadowRadiusB;
     }
 }
 

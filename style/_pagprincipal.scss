@@ -25,7 +25,7 @@ main{
                 text-shadow: $shadowRadiusLightW;
             }
             h2{
-                font-size: $fontsize2;
+                font-size: $fontsize1;
                 line-height: 75px;
                 text-shadow: $shadowRadiusLightW;
             }
@@ -95,8 +95,8 @@ main{
             div{
                 height: 350px;
                 width: 400px;
-                background-color: rgba(255, 255, 255, 0.303);
-                border: 1px solid rgba(255, 255, 255, 0.411);
+                background-color: rgba(0, 0, 0, 0.411);
+                border: 1px solid rgba(238, 234, 6, 0.356);
                 border-radius: 20px;
                 padding: 20px 20px 20px 20px;
                 margin: 30px 30px 30px 30px;
@@ -106,11 +106,12 @@ main{
                 justify-content:space-around;
                 align-items: center;
                 flex-direction: column;
-                filter: brightness(0.9);
+                filter: brightness(0.85);
                 transition: 0.25s;
 
                 h1{
                     font-size: 24px;
+                    text-shadow: $shadowRadiusLightW;
                     font-family: $fontfamily2;
                     line-height: $lineheight2;
                 }
@@ -120,8 +121,10 @@ main{
                     line-height: $lineheight4;
                 }
                 a{
+                    font-family: $fontfamily3;
+                    font-size: $fontsize6;
                     background-color: $colorDark;
-                    border: 2px solid black;
+                    border: 1px solid rgba(238, 234, 6, 0.356);
                     text-align: center;
                     padding: 4px 4px 4px 4px;
                     border-top-left-radius: 2px;
@@ -129,7 +132,7 @@ main{
                     border-bottom-left-radius: 10px;
                     border-bottom-right-radius: 2px;
                     text-decoration: none;
-                    box-shadow: $shadowRadiusLightB;
+                    box-shadow: $shadowRadiusLightW;
                     }
                 a:hover{
                     filter: brightness(1.4);
