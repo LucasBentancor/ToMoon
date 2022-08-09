@@ -351,7 +351,7 @@ header nav .menu .menuDesplegable a h1 {
   }
 }
 .fondoAM {
-  background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(1, 34, 54, 0.952), rgb(0, 0, 0));
+  background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(34, 20, 1, 0.952), rgb(0, 0, 0));
   width: 100%;
   height: max-content;
 }
@@ -388,7 +388,7 @@ header nav .menu .menuDesplegable a h1 {
 .containerSeccion1AM .containerImgAM img {
   height: auto;
   width: 100%;
-  border: 3px solid black;
+  border: 1px solid rgba(212, 175, 55, 0.253);
   border-radius: 4px;
   box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.568);
   filter: brightness(1.3);
@@ -399,12 +399,12 @@ header nav .menu .menuDesplegable a h1 {
   font-family: zabal;
   font-size: 22px;
   line-height: 26.4px;
-  background-color: rgba(250, 250, 250, 0.075);
+  background-color: rgba(121, 101, 13, 0.233);
   height: 600px;
   width: 600px;
   padding: 10px;
   overflow: auto;
-  border: 3px solid black;
+  border: 1px solid rgba(212, 175, 55, 0.253);
   border-radius: 4px;
   box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.568);
 }
@@ -416,13 +416,23 @@ header nav .menu .menuDesplegable a h1 {
   flex-direction: column;
 }
 .tabla h2 {
-  margin: 100px 10px 100px 10px;
-  display: flex;
-  justify-content: flex-start;
   font-family: plateia;
   font-size: 26px;
-  margin: 0px 0px 0px 20px;
-  padding: 0px 0px 100px 0px;
+  width: max-content;
+  background-color: rgba(226, 226, 226, 0.178);
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 20px;
+  padding: 10px 20px 20px 20px;
+  border: 1px solid rgba(241, 241, 241, 0.767);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 4px;
+  box-shadow: 0px 6px 10px rgba(255, 255, 255, 0.568);
+  font-size: 22px;
+  margin: 0px 0px 100px 20px;
 }
 .tabla table {
   align-self: center;
@@ -456,7 +466,7 @@ header nav .menu .menuDesplegable a h1 {
   padding-top: 100px;
 }
 .containerVideoMoon video {
-  border: 1px solid rgba(0, 0, 0, 0.637);
+  border: 1px solid rgba(212, 175, 55, 0.253);
   box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.568);
 }
 
@@ -467,15 +477,25 @@ header nav .menu .menuDesplegable a h1 {
   align-items: center;
 }
 .containerFL .tituloFases {
-  margin: 100px 10px 100px 10px;
-  display: flex;
-  justify-content: flex-start;
   font-family: plateia;
   font-size: 26px;
+  width: max-content;
+  background-color: rgba(226, 226, 226, 0.178);
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 20px;
+  padding: 10px 20px 20px 20px;
+  border: 1px solid rgba(241, 241, 241, 0.767);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 4px;
+  box-shadow: 0px 6px 10px rgba(255, 255, 255, 0.568);
+  font-size: 22px;
   margin-top: 0px;
 }
 .containerFL .containerLista {
-  background-color: rgba(226, 226, 226, 0.178);
   height: min-content;
   width: 80%;
   display: flex;
@@ -487,7 +507,7 @@ header nav .menu .menuDesplegable a h1 {
 }
 
 .fondoMH {
-  background-image: linear-gradient(to bottom, rgb(8, 8, 8), rgba(2, 61, 53, 0.918), rgb(8, 8, 8));
+  background-image: linear-gradient(to bottom, rgb(8, 8, 8), rgba(66, 22, 5, 0.918), rgb(8, 8, 8));
   width: 100%;
   height: 100%;
 }
@@ -520,7 +540,7 @@ header nav .menu .menuDesplegable a h1 {
 .containerImgMargaret img {
   width: 300px;
   height: auto;
-  border: 1px solid rgba(222, 222, 222, 0.808);
+  border: 1px solid rgba(222, 222, 222, 0.445);
   box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.568);
 }
 
@@ -538,7 +558,7 @@ header nav .menu .menuDesplegable a h1 {
 .containerIframeMargaret {
   margin-top: 100px;
   margin-bottom: 100px;
-  margin: 100px 20px 50px 20px;
+  margin: 0px 20px 50px 20px;
 }
 .containerIframeMargaret iframe {
   border: 1px solid rgba(0, 0, 0, 0.849);
@@ -580,7 +600,7 @@ header nav .menu .menuDesplegable a h1 {
   grid-gap: 25px;
 }
 .gridContainerMargaret .gridMH {
-  border: 1px solid rgb(222, 222, 222);
+  border: 1px solid rgba(222, 222, 222, 0.486);
   box-shadow: 0px 0px 6px rgba(9, 9, 9, 0.904);
   margin: 5px;
 }
@@ -644,7 +664,7 @@ header nav .menu .menuDesplegable a h1 {
   }
 }
 .fondoAP {
-  background-image: linear-gradient(to bottom, rgba(8, 8, 8, 0.966), rgb(48, 5, 5), rgba(8, 8, 8, 0.966));
+  background-image: linear-gradient(to bottom, rgba(8, 8, 8, 0.966), rgba(7, 48, 61, 0.966), rgba(8, 8, 8, 0.966));
   width: 100%;
   height: 100%;
 }
@@ -699,20 +719,20 @@ header nav .menu .menuDesplegable a h1 {
 }
 
 .containerCuerpoPA .incremento-1 {
-  box-shadow: -2px 3px 6px rgba(255, 255, 255, 0.568);
-  border: 1px solid rgba(222, 222, 222, 0.274);
+  box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.568);
+  border: 1px solid rgba(222, 222, 222, 0.164);
 }
 .containerCuerpoPA .incremento-2 {
-  box-shadow: -2px 3px 12px rgba(255, 255, 255, 0.568);
-  border: 2px solid rgba(222, 222, 222, 0.274);
+  box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.568);
+  border: 2px solid rgba(222, 222, 222, 0.164);
 }
 .containerCuerpoPA .incremento-3 {
-  box-shadow: -2px 3px 18px rgba(255, 255, 255, 0.568);
-  border: 3px solid rgba(222, 222, 222, 0.274);
+  box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.568);
+  border: 3px solid rgba(222, 222, 222, 0.164);
 }
 .containerCuerpoPA .incremento-4 {
-  box-shadow: -2px 3px 24px rgba(255, 255, 255, 0.568);
-  border: 4px solid rgba(222, 222, 222, 0.274);
+  box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.568);
+  border: 4px solid rgba(222, 222, 222, 0.164);
 }
 
 .containerBotonApollo {
@@ -741,7 +761,7 @@ header nav .menu .menuDesplegable a h1 {
 }
 
 .fondoAS {
-  background-image: linear-gradient(to bottom, rgb(5, 5, 5), rgba(19, 8, 37, 0.952), rgb(5, 5, 5));
+  background-image: linear-gradient(to bottom, rgb(5, 5, 5), rgba(14, 3, 46, 0.952), rgb(5, 5, 5));
   color: rgb(222, 222, 222);
   width: 100%;
   height: 100%;
@@ -949,6 +969,40 @@ header nav .menu .menuDesplegable a h1 {
   background-position: center top;
 }
 
+.containerExer {
+  padding: 0px 20px 100px 20px;
+}
+.containerExer h2 {
+  font-family: plateia;
+  font-size: 26px;
+  width: max-content;
+  background-color: rgba(226, 226, 226, 0.178);
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 20px;
+  padding: 10px 20px 20px 20px;
+  border: 1px solid rgba(241, 241, 241, 0.767);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 4px;
+  box-shadow: 0px 6px 10px rgba(255, 255, 255, 0.568);
+}
+.containerExer p {
+  font-family: zabal;
+  font-size: 22px;
+  line-height: 26.4px;
+  background-color: rgba(16, 4, 49, 0.384);
+  height: min-content;
+  width: 100%;
+  padding: 20px;
+  overflow: auto;
+  border: 1px solid rgba(199, 199, 199, 0.322);
+  border-radius: 4px;
+  box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.568);
+}
+
 @media (max-width: 1131px) {
   .containerGrid {
     grid-template-columns: repeat(3, 250px);
@@ -1059,32 +1113,6 @@ header nav .menu .menuDesplegable a h1 {
     grid-column: 2/3;
     grid-row: 6/7;
   }
-}
-.containerExer {
-  padding: 0px 20px 100px 20px;
-}
-.containerExer h2 {
-  font-family: plateia;
-  font-size: 26px;
-  width: max-content;
-  background-color: rgba(226, 226, 226, 0.178);
-  text-align: center;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  margin-left: 20px;
-  padding: 10px 20px 20px 20px;
-  border: 1px solid rgba(241, 241, 241, 0.767);
-  border-top-left-radius: 4px;
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 4px;
-  box-shadow: 0px 6px 10px rgba(255, 255, 255, 0.568);
-}
-.containerExer p {
-  font-family: typori;
-  font-size: 20px;
-  line-height: 24px;
-  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
