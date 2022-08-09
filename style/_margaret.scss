@@ -54,6 +54,7 @@
 .containerSubTituloMargaret{
     h2{
         @include tituloleft;
+        font-size: $fontsize3;
     }
 }
 
