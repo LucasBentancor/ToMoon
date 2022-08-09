@@ -682,11 +682,11 @@ header nav .menu .menuDesplegable a h1 {
   line-height: 26.4px;
   margin-top: 50px;
   background-color: rgba(16, 16, 16, 0.374);
-  padding: 5px 20px 5px 20px;
-  height: min-content;
+  height: auto;
   width: 600px;
   text-align: justify;
   border-radius: 8px;
+  padding: 20px;
 }
 .containerCuerpoPA .imgPA {
   margin: 20px 10px 20px 10px;
