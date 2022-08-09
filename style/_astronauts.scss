@@ -267,3 +267,16 @@ $mapaColorBio:(
         }
     }
 }
+
+.containerExer{
+    padding: 0px 20px 100px 20px;
+    h2{
+        @include tituloleft;
+    }
+    p{
+        font-family: $fontfamily3;
+        font-size: $fontsize4;
+        line-height: $lineheight4;
+        width: 100%;
+    }
+}
