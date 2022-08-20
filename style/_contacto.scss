@@ -1,5 +1,61 @@
 .fondoC{
-    background-image: linear-gradient(to bottom, rgba(8, 8, 8, 0.966),rgb(70, 70, 6),  rgba(8, 8, 8, 0.966));
+    background-color: rgb(7, 6, 6);
     width: 100%;
     height: 100vh;
+}
+
+.containerFormulario{
+    padding-top: 250px;
+    display: flex;
+    justify-content: center;
+
+    .formulario{
+        font-family: $fontfamily4;
+        font-size: $fontsize5;
+        width: 350px;
+        border: 1px solid white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: $shadowRadiusW;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        input{
+            font-family: $fontfamily4;
+            font-size: $fontsize6;
+            color: rgb(36, 31, 31);
+            padding: 2px;
+            margin-top: 4px;
+            margin-bottom: 15px;
+        }
+
+        .botonF{
+            font-family: $fontfamily4;
+            font-size: $fontsize6;
+            width: min-content;
+            align-self: center;
+            margin-top: 30px;
+            color: rgb(17, 11, 11);
+            background-color: #f8f8f8b7;
+            border: 2px solid rgb(31, 31, 31);
+            padding: 7px 14px 7px 14px;
+            border-top-left-radius: 2px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 2px;
+            text-decoration: none;
+            box-shadow: $shadowRadiusLightW;
+        }
+
+        .botonF:hover{
+            filter: brightness(1.2);
+            transform: scale(1.05);
+        }
+        
+        textarea{
+            color: rgb(17, 11, 11);
+            font-size: $fontsize4;
+        }
+    }
 }

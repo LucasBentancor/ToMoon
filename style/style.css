@@ -499,6 +499,23 @@ header nav .menu .menuDesplegable a h1 {
   padding: 10px 10px 10px 20px;
 }
 
+.containerVideoM {
+  display: flex;
+  justify-content: start;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 100px;
+}
+.containerVideoM iframe {
+  border: 1px solid rgba(235, 235, 235, 0.404);
+  box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.568);
+  filter: grayscale(50%);
+  transition: 0.4s;
+}
+.containerVideoM iframe:hover {
+  filter: grayscale(0%);
+}
+
 .fondoMH {
   background-image: linear-gradient(to bottom, rgb(8, 8, 8), rgba(66, 22, 5, 0.918), rgb(8, 8, 8));
   width: 100%;
@@ -1108,9 +1125,60 @@ header nav .menu .menuDesplegable a h1 {
   }
 }
 .fondoC {
-  background-image: linear-gradient(to bottom, rgba(8, 8, 8, 0.966), rgb(70, 70, 6), rgba(8, 8, 8, 0.966));
+  background-color: rgb(7, 6, 6);
   width: 100%;
   height: 100vh;
+}
+
+.containerFormulario {
+  padding-top: 250px;
+  display: flex;
+  justify-content: center;
+}
+.containerFormulario .formulario {
+  font-family: zabal;
+  font-size: 18px;
+  width: 350px;
+  border: 1px solid white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.568);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.containerFormulario .formulario input {
+  font-family: zabal;
+  font-size: 16px;
+  color: rgb(36, 31, 31);
+  padding: 2px;
+  margin-top: 4px;
+  margin-bottom: 15px;
+}
+.containerFormulario .formulario .botonF {
+  font-family: zabal;
+  font-size: 16px;
+  width: min-content;
+  align-self: center;
+  margin-top: 30px;
+  color: rgb(17, 11, 11);
+  background-color: rgba(248, 248, 248, 0.7176470588);
+  border: 2px solid rgb(31, 31, 31);
+  padding: 7px 14px 7px 14px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 2px;
+  text-decoration: none;
+  box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.568);
+}
+.containerFormulario .formulario .botonF:hover {
+  filter: brightness(1.2);
+  transform: scale(1.05);
+}
+.containerFormulario .formulario textarea {
+  color: rgb(17, 11, 11);
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

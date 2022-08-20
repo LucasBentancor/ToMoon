@@ -118,3 +118,20 @@
     }
 }
 
+.containerVideoM{
+    display: flex;
+    justify-content: start;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 100px;
+
+        iframe{
+            border: 1px solid rgba(235, 235, 235, 0.404);
+            box-shadow: $shadowRadiusLightW;
+            filter: grayscale(50%);
+            transition: 0.4s;
+        }
+        iframe:hover{
+            filter: grayscale(0%);
+        }
+}
