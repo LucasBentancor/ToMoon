@@ -1,4 +1,4 @@
-.fondo{
+.fondo {
     position: fixed;
     z-index: -1;
     width: 100%;
@@ -9,8 +9,9 @@
     background-size: cover;
 }
 
-main{
-    .presentacion{
+main {
+
+    .presentacion {
             font-family: $fontfamily1;
             line-height: 75px;
             padding: 350px 0px 350px 0px;
@@ -19,11 +20,13 @@ main{
             justify-content: center;
             align-items: center;
             align-content: center;
-            h2{    
+
+            h2 {    
                 font-size: $fontsize1;
                 text-shadow: $shadowRadiusLightW;
             }
-            h2 span{
+
+            h2 span {
                 color: black;
                 text-shadow: $shadowRadiusW;
                 display: flex;
@@ -34,58 +37,63 @@ main{
                 animation-timing-function: linear;
                 animation-delay: 0.1s;
             }
-            @keyframes space{
-                0%{
+
+            @keyframes space {
+                0% {
                     opacity: 0;
                 }
-                25%{
+                25% {
                     opacity: 0.25;
                 }
-                50%{
+                50% {
                     opacity: 0.50;
                     transform: scale(1.12);
                 }
-                75%{
+                75% {
                     opacity: 0.65;
                 }
-                100%{
+                100% {
                     opacity: 1;
                     transform: scale(1);
                 }
             }            
         }
     
-    .cutPageP1{
+    .cutPageP1 {
         @include cutpage;
     }
-    .cartas{
+
+    .cartas {
         height: max-content;
         padding-bottom: 60px;
         width: 100%;
         background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(46, 33, 3), rgb(0, 0, 0));    
     
-        .bgTituloSecciones{
+        .bgTituloSecciones {
             display: flex;
             justify-content: center;        
-            h2{
+            
+            h2 {
                 @include titulocenter;
                 margin-top: 80px;
                 margin-bottom: 100px;
             }
         }
-        .ContainerCarta{
+
+        .ContainerCarta {
             display: flex;
             flex-wrap: wrap;
             justify-content:center;
             height: auto;
             margin-bottom: 100px;
 
-            div:hover{
+            div:hover {
                 filter: brightness(1);
                 box-shadow: -12px 12px 12px rgb(9, 9, 9, 0.904);
                 transform: rotate3d(1,1,0,13deg);
             }
-            div{
+
+            div {
                 height: 350px;
                 width: 400px;
                 background-color: rgba(0, 0, 0, 0.411);
@@ -102,18 +110,20 @@ main{
                 filter: brightness(0.85);
                 transition: 0.25s;
 
-                h1{
+                h1 {
                     font-size: 24px;
                     text-shadow: $shadowRadiusLightW;
                     font-family: $fontfamily2;
                     line-height: $lineheight2;
                 }
-                p{
+
+                p {
                     font-family: $fontfamily3;
                     font-size: $fontsize4;
                     line-height: $lineheight4;
                 }
-                a{
+
+                a {
                     font-family: $fontfamily3;
                     font-size: $fontsize6;
                     background-color: $colorDark;
@@ -127,7 +137,8 @@ main{
                     text-decoration: none;
                     box-shadow: $shadowRadiusLightW;
                     }
-                a:hover{
+
+                a:hover {
                     filter: brightness(1.4);
                     transform: scale(1.01);
                     box-shadow: $shadowRadiusB;
@@ -135,22 +146,24 @@ main{
             }
         }
     }
-    .cutPage2{
+
+    .cutPage2 {
         @include cutpage2;
     }
+
     .containerConcept {
-        @if $concept == conceptIn{
+        @if $concept == conceptIn {
             @include conceptIn;
         }
     
-        @else if $concept == conceptOut{
+        @else if $concept == conceptOut {
             @include conceptOut;
         }
     }
     
 }
 
-footer{
+footer {
     font-family: $fontfamily1;
     font-size: $fontsize2;
     background-color:rgba(2, 2, 2, 0.956);
@@ -163,15 +176,16 @@ footer{
     justify-content: center;
     align-items: center;
 
-    .redes i:hover{
+    .redes i:hover {
         color: #6d4a22;
     }
-    .redes{
+
+    .redes {
         letter-spacing: 10px;
         padding-bottom: 10px;
         color: rgb(235, 235, 235);
 
-        a{
+        a {
             text-decoration: none;
         }
     }

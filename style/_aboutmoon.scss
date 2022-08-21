@@ -1,26 +1,28 @@
-.fondoAM{
+.fondoAM {
     background-image: linear-gradient(to bottom, rgb(0, 0, 0),rgba(34, 20, 1, 0.952), rgb(0, 0, 0));
     width: 100%;
     height: max-content;
 }
 
-.containerTituloAM{
+.containerTituloAM {
     padding: 183px 20px 100px 20px;
     display: flex;
     justify-content: center;
+
     h2{
         @include titulocenter;
     }
 }
-.containerSeccion1AM{
+.containerSeccion1AM {
     display: flex;
     flex-wrap: wrap;
     justify-content:space-around;
     padding: 0px 20px 100px 20px;
     
-    .containerImgAM{
+    .containerImgAM {
         padding: 0px 10px 0px 10px;
-        img{
+
+        img {
             height: auto;
             width: 100%;
             border: 1px solid rgba(212, 175, 55, 0.253);
@@ -32,7 +34,7 @@
     }
 }
 
-.cuerpoMoon{
+.cuerpoMoon {
     font-family: $fontfamily4;
     font-size: $fontsize3;
     line-height: $lineheight3;
@@ -46,17 +48,19 @@
     box-shadow: $shadowRadiusLightW;
 }
 
-.tabla{
+.tabla {
     padding: 0px 0px 100px 0px;
     width: 100%;
     display: flex;
     flex-direction: column;
-    h2{
+
+    h2 {
         @include tituloleft;
         font-size: $fontsize3;
         margin: 0px 0px 100px 20px;
     }
-    table{
+
+    table {
         align-self: center;
         width: auto;
         height: 250px;
@@ -65,18 +69,20 @@
         text-align: center;
         background-color: rgba(4, 30, 49, 0.473);
         box-shadow: $shadowRadiusLightW;
-        th, td{
+
+        th, td {
             padding: 5px;
             border:1px solid rgba(211, 211, 211, 0.356);
             box-shadow: $shadowRadiusLightB;
         }
-        .tdLeft{
+
+        .tdLeft {
             text-align: left
         }
     }
 }
 
-.cuerpoMoonV{
+.cuerpoMoonV {
     @extend .cuerpoMoon;
     width: 100%;
     height: max-content;
@@ -88,50 +94,54 @@
     justify-content: center;
     padding-bottom: 100px;
     padding-top: 100px;
-    video{
+
+    video {
         border: 1px solid rgba(212, 175, 55, 0.253);
         box-shadow: $shadowRadiusW;    
     }
 }
 
-.containerFL{
+.containerFL {
     padding-bottom: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    .tituloFases{
+
+    .tituloFases {
         @include tituloleft;
         font-size: $fontsize3;
         margin-top: 0px;
     }
 
-    .containerLista{
+    .containerLista {
         @extend .cuerpoMoon;
         height: min-content;
         width: 80%;
         display: flex;
         flex-direction: column;
         padding: 10px;
-        ul{
+
+        ul {
             padding: 10px 10px 10px 20px;
         }
     }
 }
 
-.containerVideoM{
+.containerVideoM {
     display: flex;
     justify-content: start;
     padding-right: 20px;
     padding-left: 20px;
     padding-bottom: 100px;
 
-        iframe{
+        iframe {
             border: 1px solid rgba(235, 235, 235, 0.404);
             box-shadow: $shadowRadiusLightW;
             filter: grayscale(50%);
             transition: 0.4s;
         }
-        iframe:hover{
+        
+        iframe:hover {
             filter: grayscale(0%);
         }
 }

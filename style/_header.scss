@@ -1,4 +1,4 @@
-    header{
+    header {
         z-index: 1;
         position: fixed;
         width: 80%;
@@ -15,19 +15,23 @@
         border-bottom-right-radius: 2px;
         box-shadow: $shadowRadiusB;
     
-        div{
+        div {
             font-family: $fontfamily1;
             font-size: 40px;
         }
         
-        nav{
-            .menu{
-                a{
-                    img:hover{
+        nav {
+
+            .menu {
+
+                a {
+
+                    img:hover {
                         filter: brightness(1.1);
                         transform: scale(1.09);
                     }
-                    img{
+
+                    img {
                         position: relative;
                         height: 65px;
                         width: 65px;
@@ -36,7 +40,7 @@
                     }
                 }
                 
-                .menuDesplegable{
+                .menuDesplegable {
                     display: none;
                     position: absolute;
                     width: max-content;
@@ -50,15 +54,16 @@
                     border-bottom-right-radius: 8px;
                     border: 1px solid rgba(0, 0, 0, 0.782);
                 
-                    a{
+                    a {
                         text-decoration: none;
 
-                        h1:hover{
+                        h1:hover {
                             transform: scale(1.04);
                             filter: brightness(1);
                             box-shadow: $shadowRadiusLightB;
                         }
-                        h1{
+
+                        h1 {
                             font-family: $fontfamily2;
                             font-size: $fontsize3;
                             border-radius: 10px;
@@ -78,26 +83,26 @@
         }
 }
 
-.menu:hover > .menuDesplegable{
+.menu:hover > .menuDesplegable {
     display: block;
     animation-name: desplegable;
     animation-duration: 0.3s;
     animation-timing-function: linear;
 }
-@keyframes desplegable{
-    0%{
+@keyframes desplegable {
+    0% {
         opacity: 0;
     }
-    25%{
+    25% {
         opacity: 0.25;
     }
-    50%{
+    50% {
         opacity: 0.50;
     }
-    75%{
+    75% {
         opacity: 0.75;
     }
-    100%{
+    100% {
         opacity: 1;
     }
 }

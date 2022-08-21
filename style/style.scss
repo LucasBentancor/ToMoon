@@ -1,6 +1,5 @@
 // Diseño general
-
-*{
+* {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
@@ -8,11 +7,11 @@
     color: rgb(222, 222, 222);
     
     // scrollbar
-    ::-webkit-scrollbar{
+    ::-webkit-scrollbar {
         width: 8px;
         background-color: rgb(12, 12, 12);
     }
-    ::-webkit-scrollbar-thumb{
+    ::-webkit-scrollbar-thumb {
         background-color: rgba(172, 172, 172, 0.84);
         border-radius: 5px;
         border: 1px solid rgba(0, 0, 0, 0.568)
@@ -20,7 +19,6 @@
 }
 
 // variables Tipografias | Medidas de fuentes | Shadows
-
 @font-face {
     font-family: azonix;
     src: url(../tipografia/Azonix.otf);
@@ -139,7 +137,6 @@ $shadowRadiusLightW: 0px 0px 6px rgba(255, 255, 255, 0.568);
 
 
 // concept diseño IN | OUT 
-
 $concept: conceptOut;
 
 @mixin conceptIn {
@@ -153,10 +150,10 @@ $concept: conceptOut;
     align-items: center;
     padding: 100px 0px 100px 0px;
     
-    h4{
+    h4 {
     @include tituloleft;
     }
-    p{
+    p {
         font-family: $fontfamily4;
         font-size: $fontsize3;
         line-height: $lineheight3;
@@ -179,10 +176,10 @@ $concept: conceptOut;
     flex-direction: column;
     padding: 100px 0px 100px 0px;
     
-    h4{
+    h4 {
     @include tituloleft;
     }
-    p{
+    p {
         font-family: $fontfamily4;
         font-size: $fontsize3;
         line-height: $lineheight3;
@@ -199,7 +196,6 @@ $concept: conceptOut;
 }
 
 // Importaciones: Inicio | header | Footer | About Moon | Margaret Hamilton | Apollo Program | Astronauts | Contacto
-
 @import "_pagprincipal.scss";
 @import "_header.scss";
 @import "_aboutmoon.scss";
