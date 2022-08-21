@@ -29,7 +29,7 @@
     }
 
     .formulario {
-        background-image: linear-gradient(to right bottom, #00092c, #001035, #00153f, #031949, #071d53, #071c53, #081c52, #081b52, #041648, #01113e, #010a35, #00002c);
+        background-image: linear-gradient(to left top, #08083b, #071140, #081645, #0a1c4a, #0d224f, #0d224f, #0d224f, #0d224f, #0a1c4a, #081645, #071140, #08083b);
         font-family: $fontfamily4;
         font-size: $fontsize5;
         width: min-content;
@@ -95,5 +95,45 @@
 
     .formulario:hover {
         filter: brightness(1);
+    }
+}
+
+.formulario {
+    animation-name: formulario;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+    animation-iteration-count: 2;
+}
+
+@keyframes formulario{
+    10%{
+        transform: rotate(1deg);
+    }
+    20%{
+        transform: rotate(3deg);
+    }
+    30%{
+        transform: rotate(5deg);
+    }
+    40%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(-1deg);
+    }
+    60%{
+        transform: rotate(-3deg);
+    }
+    70%{
+        transform: rotate(-5deg);
+    }
+    80%{
+        transform: rotate(-4deg);
+    }
+    90%{
+        transform: rotate(-1deg);
+    }
+    100%{
+        transform: rotate(0deg);
     }
 }

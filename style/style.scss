@@ -23,14 +23,17 @@
     font-family: azonix;
     src: url(../tipografia/Azonix.otf);
 }
+
 @font-face {
     font-family: plateia;
     src: url(../tipografia/Plateia\ Bold.ttf);
 }
+
 @font-face {
     font-family: typori;
     src: url(../tipografia/Typori-Regular.ttf);
 }
+
 @font-face {
     font-family: zabal;
     src: url(../tipografia/ZabalDEMO-SemiBold.otf);
@@ -89,6 +92,7 @@ $shadowRadiusLightW: 0px 0px 6px rgba(255, 255, 255, 0.568);
     background-color: rgba(0, 0, 0, 0.956);
     box-shadow: 0px -4px 20px rgba(0, 0, 0, 0.904);
 }
+
 @mixin cutpage2 {
     background-color: black;
     height: 120px;
@@ -96,6 +100,7 @@ $shadowRadiusLightW: 0px 0px 6px rgba(255, 255, 255, 0.568);
     background-color: rgba(0, 0, 0, 0.956);
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.904);
 }
+
 @mixin titulocenter {
     font-family: $fontfamily2;
     font-size: $fontsize2;
@@ -110,6 +115,7 @@ $shadowRadiusLightW: 0px 0px 6px rgba(255, 255, 255, 0.568);
     border-bottom-right-radius: 4px;
     box-shadow: $shadowBotW;
 }
+
 @mixin tituloleft {
     font-family: $fontfamily2;
     font-size: $fontsize2;
@@ -127,6 +133,7 @@ $shadowRadiusLightW: 0px 0px 6px rgba(255, 255, 255, 0.568);
     border-bottom-right-radius: 4px;
     box-shadow: $shadowBotW;
 }
+
 @mixin subtitulo {
     margin: 100px 10px 100px 10px;
     display: flex;
@@ -153,6 +160,7 @@ $concept: conceptOut;
     h4 {
     @include tituloleft;
     }
+
     p {
         font-family: $fontfamily4;
         font-size: $fontsize3;
@@ -167,6 +175,7 @@ $concept: conceptOut;
         background-color: rgba(201, 201, 201, 0.164);
     }
 }
+
 @mixin conceptOut {
     background-color: rgba(0, 0, 0, 0.603);
     height: auto;
@@ -179,6 +188,7 @@ $concept: conceptOut;
     h4 {
     @include tituloleft;
     }
+
     p {
         font-family: $fontfamily4;
         font-size: $fontsize3;
