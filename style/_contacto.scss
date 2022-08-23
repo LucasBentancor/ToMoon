@@ -100,7 +100,7 @@
 
 .formulario {
     animation-name: formulario;
-    animation-duration: 0.3s;
+    animation-duration: 0.2s;
     animation-timing-function: linear;
     animation-iteration-count: 2;
 }
@@ -110,10 +110,10 @@
         transform: rotate(1deg);
     }
     20%{
-        transform: rotate(3deg);
+        transform: rotate(2deg);
     }
     30%{
-        transform: rotate(5deg);
+        transform: rotate(3deg);
     }
     40%{
         transform: rotate(0deg);
@@ -122,13 +122,13 @@
         transform: rotate(-1deg);
     }
     60%{
-        transform: rotate(-3deg);
+        transform: rotate(-2deg);
     }
     70%{
-        transform: rotate(-5deg);
+        transform: rotate(-3deg);
     }
     80%{
-        transform: rotate(-4deg);
+        transform: rotate(-2deg);
     }
     90%{
         transform: rotate(-1deg);
